@@ -1,0 +1,18 @@
+# Private working notes for local sessions. Never published.
+.context/
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Local copy of source documents, pointed at by SCP_CIVICS_DATA.
+/data/
+
+# Regenerated or machine-local.
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.pw-profile/
+.session/
+
+# Draft requests and anything else a user generates next to the plugin.
+drafts/

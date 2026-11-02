@@ -1,0 +1,12 @@
+{
+  "name": "scp-civics",
+  "owner": { "name": "Joseph Coco" },
+  "description": "Civic research tools for St. Charles Parish, Louisiana.",
+  "plugins": [
+    {
+      "name": "scp-civics",
+      "source": "./",
+      "description": "St. Charles Parish land-use procedure, Master Drainage Plan checks, and public records request submission."
+    }
+  ]
+}
