@@ -10,9 +10,12 @@ It records how parish processes work and where the records are, including what t
 
 | Skill | Use it for |
 |---|---|
-| `scp-civics:scp-land-use-process` | Rezonings, Future Land Use Map amendments, plats and waivers, notice rules, Herald-Guide legal notices, Legistar quirks, the Industrial Development Board, parish contacts |
+| `scp-civics:scp-land-use-process` | Rezonings, Future Land Use Map amendments, plats and waivers, variances, permit routes, notice rules, Herald-Guide legal notices, Legistar quirks, the Industrial Development Board, parish contacts |
+| `scp-civics:scp-case-check` | Auditing one rezoning, plat or variance from its case number: its path, notice day counts, deadlines, Future Land Use Map resolution, plat against drainage study, waivers, and questions for staff |
+| `scp-civics:scp-watch` | A standing search for a project, applicant, place or topic across the Herald-Guide legal notices and Parish Council matters on Legistar, reporting only what is new since the last run. The watch lives in your project folder. |
 | `scp-civics:scp-ordinances` | Searching the parish code, Charter, zoning and subdivision appendices from a local copy, reading a section by number, and checking Legistar for later amendments |
 | `scp-civics:scp-master-drainage-plan` | Checking a proposed project against the parish Master Drainage Plan: which study covers the site, which planned improvements it touches, what they cost, and whether they have been funded or built |
+| `scp-civics:scp-comprehensive-plan` | What the 2030 Comprehensive Plan (2011) and its 2022 Update say about a place, parcel, Future Land Use category or topic, with document and page. Keeps the map designation apart from goals and recommendations, and says which map is current |
 | `scp-civics:scp-prr` | Getting records from a St. Charles Parish body: finds the custodian, asks what decides scope and speed, drafts the request, can fill the parish portal form up to Submit, and covers follow-up |
 
 The plugin drafts and researches. At your request it can fill the parish records form, but you review it and click Submit. It never sends a request, files a comment or buys a record.
@@ -38,11 +41,11 @@ This plugin works alone. [Bayou Blockade](https://github.com/Lythimus/bayou-bloc
 | `itep-lookup`, `la-bond-dockets` | Incentive and bond records | Use LED FastLane and State Bond Commission agendas |
 | `la-coastal-use-permits`, `fema-flood`, `document-ocr` and others | Coastal permits, flood zones, scanned documents | The skill names the source, and says the check was not run |
 
-## Drainage plan documents
+## Plan documents
 
-`skills/scp-master-drainage-plan/corpus/` holds Markdown conversions of the parish's Master Drainage Plan executive summaries and public-meeting decks, with figure and table images. The images make this plugin about 50 MB to install. They are there because the plan has no maps in data form, so locating a site means reading the drawings.
+`skills/scp-master-drainage-plan/corpus/` holds Markdown conversions of the parish's Master Drainage Plan executive summaries and public-meeting decks, with figure and table images. `skills/scp-comprehensive-plan/corpus/` does the same for the 2030 Comprehensive Plan (2011) and its 2022 Update, about 19 MB. Together the images make this plugin about 70 MB to install. They are there because the plan has no maps in data form, so locating a site means reading the drawings.
 
-The source PDFs are not included; the parish publishes them on its website. The Apache license covers this project's own work, and the plan documents remain parish records. `corpus/STATUS.md` records what was verified in the conversion, and `references/adding-documents.md` describes the method.
+The source PDFs are not included; the parish publishes them on its website. The Apache license covers this project's own work, and the plan documents remain parish records. Each corpus's `STATUS.md` records what was verified in the conversion and what was not, and `references/adding-documents.md` describes the method.
 
 To check against your own copies of the PDFs and council attachments, set `SCP_CIVICS_DATA` to their folder.
 
