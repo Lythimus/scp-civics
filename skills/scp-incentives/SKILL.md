@@ -36,7 +36,9 @@ List the applicant LLC, parent, affiliates, site, any project code name and each
 
 ## 2. Get the lease list from the audits
 
-The audits are the only public list found of every lease, because Legistar starts too late. As of 2026-11-03, the newest one confirmed was FY2023, so a later lease won't be in it. Look for newer years: open the by-agency tab at https://www.lla.la.gov/reports/audit-reports in a browser, or search the web for `"Industrial Development Board of the Parish of St. Charles" site:lla.la.gov`. Check the entity name, since other parishes' boards have similar names.
+The audits are the only public list found of every lease, because Legistar starts too late. As of 2026-11-03, the Legislative Auditor had posted FY2025 (8/5/2026), FY2024 (7/16/2025) and FY2023 (8/7/2024). A lease made after the newest year won't be in it.
+
+If the `bayou:la-legislative-auditor` skill is available, use it: `agency "St. Charles Parish Industrial Development Board"`, the auditor's name for it, which differs from the corporate name. Exit 1 means not found in that search; exit 2 means not checked, so don't report it as no audit. Without that skill, or on exit 2, open the By Agency tab at https://lla.la.gov/reports/audit-reports in a browser. Check the entity name, since other parishes' boards have similar names. The auditor's link opens a short page leading to the PDF, so pass the PDF's own URL below.
 
 ```bash
 python3 "$IN" audit --url "<PDF URL>" --dir <project folder>/audits
@@ -93,7 +95,7 @@ PILOT and ITEP can apply to different property of one company, so check for both
 
 ## 8. Name the taxing bodies
 
-The audit says the parish collects PILOT payments and distributes them "in the same proportion as ad valorem tax would be distributed". So every body with a millage on the property is affected. Use the sheet for the year in question. As of 2026-11-03, the [assessor's page](https://stcharlesassessor.azurewebsites.net/app/clientpages/stcharles/about.html) posted sheets only through 2020, so get newer rates from the assessor or the Louisiana Tax Commission, and date what you use.
+The audit says the parish collects PILOT payments and distributes them "in the same proportion as ad valorem tax would be distributed". So every body with a millage on the property is affected. Use the sheet for the year in question. As of 2026-11-03, the [assessor's page](https://stcharlesassessor.azurewebsites.net/app/clientpages/stcharles/about.html) posted sheets only through 2020. For later years, `scp-civics:scp-budget` `millage` reads the Council's dated schedule, which covers Council-levied millages only. Get the School Board, Sheriff, assessment and levee district rates from the assessor, and date what you use.
 
 The 2020 sheet lists these parishwide. The grouping is by each line's name, so confirm who levies a millage before saying so:
 

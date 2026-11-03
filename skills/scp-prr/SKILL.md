@@ -30,7 +30,7 @@ Reference files, all under `${CLAUDE_PLUGIN_ROOT}/skills/scp-prr/`:
 
 Decide from the subject, say which one and why in one sentence, and let the user correct it. The user should not have to know how the parish is organized.
 
-The custodian still matters, because each public body keeps its own files and a request to one does not reach another. If the records plausibly sit with two bodies, produce one draft per body and say why. Sheriff's records, for instance, are not reached through the parish form, but the parish may hold its own copies of correspondence with the Sheriff's Office.
+The custodian still matters, because each public body keeps its own files and a request to one does not reach another. If the records plausibly sit with two bodies, produce one draft per body and say why. For the Industrial Development Board, expect two pieces by item: Council-office items (resolutions, minutes, Council consent) and board items (applicant file, lease, correspondence) sent to the board's president, as `references/custodians/idb.md` lays out. Sheriff's records, for instance, are not reached through the parish form, but the parish may hold its own copies of correspondence with the Sheriff's Office.
 
 If the custodian file says something is unestablished or is a stub, tell the user rather than filling the gap from memory.
 
@@ -41,13 +41,15 @@ A request for something posted online costs everyone time. Check first, and name
 - Agendas, minutes, ordinances, packet attachments: `bayou:parish-council-agendas` if available, otherwise https://stcharlesgov.legistar.com directly.
 - Code of ordinances: `scp-civics:scp-ordinances`.
 - Drainage plan documents: `scp-civics:scp-master-drainage-plan`.
+- Budgets, capital reports, millages and audits: `scp-civics:scp-budget`.
+- The user's project folder, if they have one: look for requests already drafted or sent, and for what came back, so the draft doesn't repeat them.
 - Parish web pages: open them in the browser if a script gets a 403.
 
 If a check could not be run, say so in the drafting notes.
 
 ## Step 3: Ask what is still unknown
 
-Use AskUserQuestion. Ask only what the prompt and the checks have not answered, and offer concrete choices built from what was found. These answers decide most of the turnaround.
+Use AskUserQuestion. Ask only what the prompt and the checks have not answered, and offer concrete choices built from what was found. If you can't ask, list the questions and state each assumption in the drafting notes. These answers decide most of the turnaround.
 
 1. **What the records are.** Get the underlying question too, because it helps name record types. It stays out of the letter.
 2. **When it is needed, and why.** Ask for a hearing, vote, comment deadline or other date. Be plain that the Act has no expedited track. A real date supports a request for priority, and that is all.
@@ -68,7 +70,7 @@ For a parish request, choose departments from `references/departments.md`, show 
 
 ## Step 4: Pull the current statute
 
-Use `bayou:la-rs-search` if available. Otherwise read the text at https://legis.la.gov. Pull each section the draft cites, normally R.S. 44:1(A)(2)(a), 44:32(C)(3), 44:32(D) and 44:33(B)(1), plus R.S. 1:55 for legal holidays when computing dates. For the Sheriff's Office, also pull 44:3, 44:3.1, 44:32(B) and 44:34. Quote from what comes back. Do not reuse wording from an earlier letter, and do not quote from memory: the Act has been amended repeatedly and the day counts differ by section.
+Use `bayou:la-rs-search` if available. Otherwise enter the title and section at https://legis.la.gov/legis/LawSearch.aspx, since its `Law.aspx?d=` numbers can't be guessed. Pull each section the draft cites, normally R.S. 44:1(A)(2)(a), 44:32(C)(3), 44:32(D) and 44:33(B)(1), plus R.S. 1:55 for legal holidays when computing dates. For the Sheriff's Office, also pull 44:3, 44:3.1, 44:32(B) and 44:34, plus 44:35 for a body-worn camera recording. Quote from what comes back. Do not reuse wording from an earlier letter, and do not quote from memory: the Act has been amended repeatedly and the day counts differ by section.
 
 ## Step 5: Draft
 

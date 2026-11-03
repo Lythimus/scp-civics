@@ -5,8 +5,8 @@ Contacts from the parish records page, checked 2026-11-02. Confirm the channel b
 | Custodian | Phone | Holds |
 |---|---|---|
 | Clerk of Court | 985-783-6632 | Marriage, divorce, birth, death and court records |
-| St. Charles Parish Schools | 985-785-6289 | School system public records |
+| St. Charles Parish Schools | 985-785-6289 | School system public records. Only this phone number is established here, so ask it where requests go and who is custodian |
 
 For land records, `bayou:eclerks-land-index` searches the Clerk's index. Without bayou, use the Clerk's office or eClerks LA directly.
 
-For a body not listed, find its custodian on its own site or by phone. If it cannot be identified, leave a bracketed placeholder and say so. Do not guess an address. State and federal bodies are outside this skill: `bayou:la-public-records-request` covers state agencies, and federal agencies use FOIA.
+For a body not listed, find its custodian on its own site or by phone. If it cannot be identified, leave a bracketed placeholder and say so. Do not guess an address. State and federal bodies are outside this skill: `bayou:la-public-records-request` covers state agencies, and federal agencies use FOIA. Without bayou, take a state agency's custodian from its own site, and pull the statute as in Step 4 of the skill.

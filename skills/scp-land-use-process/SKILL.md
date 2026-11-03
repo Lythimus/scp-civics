@@ -7,14 +7,14 @@ allowed-tools: Bash, Read, Write, Grep, Glob, WebSearch, WebFetch, Skill
 
 # St. Charles Parish land-use process
 
-This skill covers the parish-specific mechanics. To audit one case, use `scp-civics:scp-case-check`. To follow a project over time, use `scp-civics:scp-watch`. For what was said or voted at a meeting, use `scp-civics:scp-meeting-record`. For PILOTs, IDB leases, bonds and tax exemptions, use `scp-civics:scp-incentives`. For drainage questions, use `scp-civics:scp-master-drainage-plan`. For what the Comprehensive Plan and its Future Land Use Map say, use `scp-civics:scp-comprehensive-plan`. Statewide sources are the `bayou:` skills named below, from the optional bayou plugin. Without it, go to the source in the same row: Legistar at https://stcharlesgov.legistar.com, the statute at https://legis.la.gov, parcels at the parish assessor.
+This skill covers the parish-specific mechanics. To audit one case, use `scp-civics:scp-case-check`. To follow a project over time, use `scp-civics:scp-watch`. For what was said or voted at a meeting, use `scp-civics:scp-meeting-record`. For PILOTs, IDB leases, bonds and tax exemptions, use `scp-civics:scp-incentives`. For parish budgets, capital projects reports and millages, use `scp-civics:scp-budget`. For drainage questions, use `scp-civics:scp-master-drainage-plan`. For what the Comprehensive Plan and its Future Land Use Map say, use `scp-civics:scp-comprehensive-plan`. Statewide sources are the `bayou:` skills named below, from the optional bayou plugin. Without it, go to the source in the same row: Legistar at https://stcharlesgov.legistar.com, the statute by title and section at https://legis.la.gov/legis/LawSearch.aspx, parcels at the parish assessor.
 
 ```bash
 SK="${CLAUDE_PLUGIN_ROOT}/skills/scp-land-use-process"
 HG=$SK/scripts/hg_legals.py            # Herald-Guide fetch / OCR / grep (stdlib + poppler + tesseract)
 ```
 
-`references/code-sections.md` holds the rules: the Appendix A Sec. XV rezoning notice and standard, the Charter, the R.S. 33 overlay, the Appendix C plat, waiver and drainage-analysis rules, and how to count notice days. Read it before stating any procedural requirement.
+`references/code-sections.md` holds the rules: the Appendix A Sec. XV rezoning notice and standard, the Charter, the R.S. 33 overlay, state rules on court review and deadlines with how far each reaches a home rule parish, the Appendix C plat, waiver and drainage-analysis rules, and how to count notice days. Read it before stating any procedural requirement.
 
 ## Bodies
 

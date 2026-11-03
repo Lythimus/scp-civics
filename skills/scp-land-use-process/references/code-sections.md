@@ -2,7 +2,7 @@
 
 These notes were read on Municode, Supplement 77 (updated 10/15/2026), on 2026-11-01. Before quoting, check Municode's "updated" date. If it has moved, re-read the section.
 
-These are notes, not the verbatim text. Save a dated excerpt in the case folder for anything you quote: Appendix A Sec. XV, Charter Art. III §C.4, Appendix C, and R.S. 33:101, 106–109, 4721, 4724, 4725 and 4780.40–.45.
+These are notes, not the verbatim text. Save a dated excerpt in the case folder for anything you quote: Appendix A Sec. XV, Charter Art. III §C.4, Appendix C, R.S. 33:101, 101.1, 106–109, 113, 4721, 4724, 4725, 4727 and 4780.40–.50, and R.S. 42:13, 14, 19 and 24.
 
 To find or check code text, and for Municode node IDs, use `scp-civics:scp-ordinances`.
 
@@ -59,10 +59,31 @@ A variance doesn't need it, because XIII.D doesn't cite the plan. A plat doesn't
 
 ## State-law overlay
 
+How these reach a home rule parish is covered in the next section.
+
 - **R.S. 33:4780.45:** a zoning commission hearing needs at least 3 publications, with at least 10 days from the first publication to the hearing. Sec. XV.B is stricter.
 - **R.S. 33:4780.43:** the Council's hearing needs publication once a week for 3 weeks, with at least 15 days of lead time, plus certified mail unless more than 10 parcels are involved.
-- **R.S. 33:4780.44:** a protest by owners of 20% of the area, or of land within 200 ft, means the change needs "the favorable vote of a majority of the members" of the governing authority.
+- **R.S. 33:4780.44:** a protest by owners of 20% of the area, or of land within 200 ft, means the change needs "the favorable vote of a majority of the members" of the governing authority. That's a majority of members, not two-thirds.
 - **R.S. 33:108(B)–(C):** a plan amendment needs a Commission hearing after one notice "of the purpose, time, and place" at least 10 days ahead, and adoption is "by resolution of a commission".
+
+## State law on review, clocks and limits
+
+Statutes were read on legis.la.gov on 2026-11-03. *Alexander* was read from lasc.org. The other cases were checked by docket or reporter cite, and their pin pages and writ histories weren't checked. This is research, not legal advice, so have a Louisiana lawyer check any deadline before relying on it. Look statutes up with `bayou:la-rs-search`. Without bayou, enter the title and section at https://legis.la.gov/legis/LawSearch.aspx.
+
+**St. Charles is a home rule parish, and that limits all of this.** R.S. 33:4780.50(C) says the parish zoning Subpart (R.S. 33:4780.40-.50) doesn't change how a home rule parish structures and distributes its powers. Whether that Subpart's notice, vote and appeal rules still bind St. Charles wasn't established. So cite Appendix A or C first where it speaks, and name the statute as the state rule "if it applies". St. Charles isn't among the four parishes R.S. 33:4780.40 excludes (Rapides, Jefferson, Sabine, Webster), and how the law reaches those wasn't checked. Municipal rules (R.S. 33:4721-4729) are written for land inside a municipality.
+
+| Instrument | What the text read says | How it may reach St. Charles |
+|---|---|---|
+| Plat | R.S. 33:101.1, as amended by Acts 2025, No. 277: approval is legislative, and review "shall be confined to the record established before" the body whose decision is appealed. R.S. 33:113: the commission acts within 60 days of submission or the plat is deemed approved unless the applicant waives, and a disapproval states its ground on the record | These sections aren't in the Subpart that R.S. 33:4780.50(C) addresses, and whether the charter changes them wasn't checked. App. C II.E.4.f also sets 60 days. Put everything in the record before the Commission decides. **Deadline to challenge a plat: not established** |
+| Variance or ZBA appeal | R.S. 33:4780.47: verified petition within 30 days after the decision is filed in the board's office, filing doesn't stay the decision, and "any opponent before the board" is a party | App. A XIII.G sends appeals to court under R.S. 33:4727, the municipal section, not R.S. 33:4780.47. Both set 30 days from filing. Which applies wasn't established, so get the filing date in writing and see a lawyer at once. Whether a letter alone makes someone an "opponent before the board" wasn't established |
+| Rezoning or zoning ordinance | **No deadline and no record rule were found.** R.S. 33:4780.40 lists grounds for review without confining it to a record. *Coogan* (La. 1980) held the 30 days in R.S. 33:4727 didn't apply to a suit over a parish council's zoning decision where there was no board of adjustment. St. Charles has a board, though rezonings don't pass through it, and what that difference does wasn't established | Whether a challenger can add evidence in court, or waives an issue not raised at a hearing, wasn't established. Plan as if 30 days from the vote may be the limit, and see a lawyer at once. That's caution, not the law. Raise and attach everything before each body votes |
+| Open Meetings | R.S. 42:24: suit within 60 days of the action. R.S. 42:14(D): public comment before a vote. R.S. 42:19(A)(1)(b): agenda at least 24 hours ahead, not counting Saturdays, Sundays and legal holidays | These aren't zoning provisions. Planning and zoning commissions are public bodies (R.S. 42:13(A)(3)). A parish board of adjustment's meetings "may be open" when it acts quasi-judicially (R.S. 33:4780.46(B)(1)), so reach to a ZBA hearing wasn't established |
+| Local environmental limits | R.S. 33:4780.49: no local governing authority shall "restrict, conflict with, interfere with, or supersede" the state's power over environmental laws or activities under state or federal permits | Whether this reaches a home rule parish wasn't established. App. A XV.E's health, safety and welfare criterion is local text, so argue land-use compatibility under it, not emission limits or a state permit |
+| Master plan | R.S. 33:109(B): the governing authority "shall consider" an adopted master plan before adopting inconsistent local laws. That's a duty to consider, not to obey | A note on the section points to Acts 2004, No. 859, § 2 on applicability, which wasn't read. Check it before citing R.S. 33:109 |
+
+**How a court starts.** *Alexander v. St. James Parish*, 2025-C-00866 (La. 3/6/26), vacated the Fifth Circuit's opinion (24-557). It deferred to the parish's reading of its own land-use plan and said "[t]here should be no de novo review". Don't cite the vacated opinion. *Alexander* came from another parish, and whether home rule changes its reasoning wasn't checked. *Tassin v. City of Marksville* (La. App. 3 Cir. 1982) held that failing to give notice the local ordinance required was fatal, but it's a municipal case that predates *Alexander*. So a counted notice shortfall under App. A is a better first argument than a dispute over what the code means. That's a reading of these cases, and no case read states it.
+
+Also **not established:** whether a comment to the Commission is in the Council's record, whether a rezoning may carry conditions absent a code provision, and whether skipping a local appeal step bars a suit.
 
 ## Subdivision (Appendix C)
 

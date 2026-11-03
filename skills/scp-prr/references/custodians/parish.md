@@ -8,6 +8,8 @@ Checked 2026-11-02 on the parish page and form.
 - **Channel:** the JustFOIA form (`../portal-form.md`), the Council Office by phone, or email to the custodian. The portal gives a tracking number, so prefer it.
 - **Track:** https://stcharlesparishla.justfoia.com/publicportal/home/track, which also has a recovery link for a lost security key.
 
+Whether a request to this custodian reaches a Council member's own or personal accounts isn't established. Name each member in the request, and ask the custodian how those accounts are searched.
+
 Not handled here, per the parish page: Sheriff's Office, court and vital, and school board records (`others.md`, `scpso.md`).
 
 ## What to expect

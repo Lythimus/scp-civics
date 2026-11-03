@@ -1,7 +1,8 @@
 # Implementation status ledger
 
-As of 2026-10-13. Covers council action from 2020-01-01. Read this before searching; then search
-only for what is newer than the as-of date, and update `index/status.csv` and this file together.
+Council record as of 2026-10-13, from 2020-01-01. Parish capital report as of 10/8/2026, read
+2026-11-03. Read this before searching; then search only for what is newer than those dates, and
+update `index/status.csv` and this file together.
 
 `index/status.csv` holds one row per plan project (369 rows, keyed on doc + page + table +
 project_id + row, because IDs repeat across volumes and alternatives; `row` counts repeats of an
@@ -17,6 +18,7 @@ summary. Rows from the two public-meeting decks are left out because they repeat
 | Parish news releases (stcharlesparish.gov), Herald Guide, L'Observateur | Partly | Three searches; used only to corroborate the Ormond, Destrehan No. 2 and Montz rows |
 | Parish capital projects report, "Drainage - May 2026" (dated 5/29/2026, 11 pages) | Yes | Transcribed to `index/parish_tracker.csv` (54 project lines) from `$SCP_CIVICS_DATA/scp-capital-drainage-2026-05.pdf`. Source page: `https://www.stcharlesparish.gov/departments/public-works/capital-projects`. The site refuses scripted requests, so save new reports through a browser |
 | Parish capital projects report, "Council - July 2026" (dated 7/31/2026, 21 pages: Drainage, Roadway, Wastewater, Levee, Miscellaneous) | Yes | Drainage and Levee pages read; `index/parish_tracker_2026-07.csv` (58 lines). PDF and text at `$SCP_CIVICS_DATA/scp-capital-council-2026-07.pdf` |
+| Parish capital projects report, "2026 10 Capital Projects" (updated 10/8/2026, 11 pages: Drainage, Roadway, Wastewater, Levee, Other, each headed "Active Projects") | Yes | Drainage and Levee pages read on the page images; `index/parish_tracker_2026-10.csv` (27 lines). PDF and text at `$SCP_CIVICS_DATA/scp-capital-council-2026-10.pdf` |
 | Other items on that page: the separate Roadway, Wastewater, Levees and Miscellaneous reports (May 2026), the Murray Hill and Ormond jack-and-bore presentations, and the "Master Drainage Studies" page | No | The July Council report repeats the category reports |
 | Capital budget schedules | Partly | 2027 proposed budget read (`index/budget_2027_proposed.csv`). Adopted budgets for 2021 to 2026 not read; their Exhibit A and B attachments are fund summaries with no project lines |
 | Louisiana Watershed Initiative award lists | Partly | Round 2 list checked for the two St. Rose pump stations only |
@@ -74,6 +76,56 @@ Phase 1 Priority 1), Clayton Pond Outfall (Norco Phase 1 Priority 3 and 4), New 
 (New Sarpy Phase 1 Priority 2) and Schexnaydre Pump Station (New Sarpy Phase 1 Priority 1). Its
 statuses are in the `parish_report_2026_07_31` column of `index/status.csv`. Many are "On Hold"
 awaiting construction funding, including the Ormond canal sheet-pile projects designed in 2021.
+The October report prints no plan priority, so those ties rest on the May and July reports.
+
+## What the October report changed
+
+The report updated 10/8/2026 is headed "Active Projects". It has 23 drainage lines where July had
+54, and the same four levee lines. **A line missing from it isn't closed, cancelled or finished.**
+The report doesn't say why any line left. No line has the report's grey "Completed" fill. So
+`parish_report_2026_07_31` keeps its text, and `parish_report_2026_10_08` holds the newer line
+where there is one. `july_project` in `index/parish_tracker_2026-10.csv` names the July line each
+October line continues, and its `new_comments` column holds the report's red "new comments".
+
+These are the parish's statements. No plan row's status in `index/status.csv` changed, since none
+of this adds a council award or completion record. Council titles weren't searched again after
+2026-10-13.
+
+| Line | July | October |
+|---|---|---|
+| Lakewood Pump Station Discharge (P241106) | Design | Construction; contract ordinance voted 9/14/26 |
+| Kinler & Paul Frederick Phase 1 (P210704) | Design, $2,500,000 | Construction, $728,906; notice to proceed for 9/10/2026, ends 2Q27 |
+| Montz Pump Station at CN Railroad (P210301) and #2 at Airline (P210806) | Design printed, with construction dates | Construction; both still end 4Q26 |
+| Turtle Pond Pump Station Replacement | Funding Application, no dates | Final Design; 3Q27 to 1Q29; 90% submittal expected by end of October |
+| Oakland and Fairfield Airline Crossing | Planning, 3Q26 start | Final Design, 2Q27 to 2Q28 |
+| Oakland and Fairfield Upstream | Planning, $500,000 | Final Design, $950,000, 2Q27 to 4Q27 |
+| Des Allemands Bulk Head Phase 2 | Preliminary Design | Final Design; aiming to bid before the end of 2026 |
+| Engineers Canal Crossing at CPKC | Negotiations, no team | Preliminary Design, GIS, 4Q27 to 2Q29; CPKC no longer able to do the work |
+| Oakland and Fairfield CPKC Crossing | Planning | Planning; CPKC no longer able to do the work, proposal to come from HNTB |
+| Evangeline Road & CN Railroad Box Culvert | 2Q26 to 4Q26 | Dates TBD; on hold until 2027 funding |
+| Ormond CN Culverts Sites 1&2 and Ormond Center | Both end 3Q26 | Both end 2Q27; 65% and 30% complete |
+| Murray Hill and Destrehan Drive; Primrose Phase 1B | End 3Q26 | End 4Q26; 85% and 50% complete |
+| King and Hahn Street | Design, final plans requested | Design; bid opening scheduled for 10/13 |
+| Engineers Canal Pump Station | Improvements (P220206), Final Design, $15,000,000, 1Q26 to 1Q27 | A line named "Design refinement" with no number, status, team, cost or dates; proposal to come from HNTB |
+
+The July lines not listed in October include these, which July didn't show as on hold: Carriage/Dunleith
+Canals Drainage Structure (Final Design), Hill Heights Phase 2, Clayton Pond Outfall and Cousins Canal
+Bank Stabilization Phases 1 to 3 (Design), Oak Street and Dianne Pump Stations (Conceptual), and
+Lemoine Lane, St. Mark Street and Davis Plantation (in-house or partly internal). Ask Public Works
+what became of a line before saying anything about it.
+
+Oddities as printed, not corrected:
+
+- New Sarpy Pump Station prints a construction start of 2Q27 and an end of 3Q23.
+- Turtle Pond Upstream is "Conceptual", with "90% Design Plans" received.
+- The Engineers Canal "Design refinement" line carries the same CPKC sentences as the crossing line,
+  though its description is the pump station. Its match to P220206 rests on the name alone: it
+  prints 150 to 340 cfs, where July's P220206 line printed 185 to 250 cfs.
+- P260803 is the crossing's number in the report, while a council title gives it to the pump
+  station's design refinement (see Norco 1-1). The registry keeps the crossing as its own
+  parish-report row, not under that council row.
+- P251001 is on both the CPKC Crossing and Upstream lines.
+- Sunset Pump Station is P080905-11B in October and P080905-11D in July.
 
 ## What the attachments, the July report and the 2027 budget added
 
@@ -100,9 +152,9 @@ Read 2026-10-13. PDFs and their text are in `$SCP_CIVICS_DATA/council-attachment
 - **July report against May.** Same 54 drainage lines. Each row's status, cost and dates were checked by script against the July PDF text; progress notes were picked by reading and are not a full diff
   (`july_note` in `index/parish_tracker_2026-07.csv`). The July file adds the four Levee lines.
   The May file `index/parish_tracker.csv` is kept as transcribed.
-- **Projects under two numbers.** The registry does not link Turtle Pond P190801 and P250901, or Fairfield and Oakland P240601, P180301-A/B/C and P251001.
-- **Kinler Street Canal number.** Both parish reports print P250507; the council title (Ord.
-  25-9-1) says P250705. Neither is corrected here.
+- **Projects under two numbers.** The registry does not link Turtle Pond P190801 and P250901, or Fairfield and Oakland P240601, P180301-A/B/C and P251001. The October report prints P250901 on both Turtle Pond lines and P241001 on the Airline Crossing.
+- **Kinler Street Canal number.** The May and July reports print P250507; the council title (Ord.
+  25-9-1) and the October report say P250705.
 - **2027 proposed budget** (file 2026-0173, "2027 Proposed Budget 9.30.2026", 308 pages). Capital
   outlay lines for funds 112, 123, 312 and 313 are in `index/budget_2027_proposed.csv`. Largest:
   Cousins Pump Station T-wall and sump $23,366,315; Engineers Canal Pump Station $21,985,000; LWI
@@ -182,7 +234,7 @@ scripts/legistar_harvest.py            # refresh index/legistar_matters.csv
 scripts/legistar_harvest.py projects   # rebuild index/parish_projects.csv
 ```
 
-As built on 2026-10-13: 86 projects. Drainage: 38 in design, 12 in construction, 7 complete. Levee system: 3 in design, 2 in construction, 7 complete.
+As built on 2026-11-03 from council titles harvested through 2026-10-13: 82 projects. Drainage: 38 in design, 12 in construction, 7 complete. Levee system: 3 in design, 2 in construction, 7 complete.
 
 Reading it:
 
@@ -282,10 +334,12 @@ scripts/mdp_index.py build
   order plus a completion certificate moves it to Built. Read the certificate and the bid
   tabulation and put what was built in the built-scope field.
 - **New parish capital report:** save it through a browser from the Capital Projects page into
-  `$SCP_CIVICS_DATA/`, run `pdftotext -layout`, copy the newest
-  `index/parish_tracker_<yyyy-mm>.csv` to the new date, change the rows that differ, and change
-  the file name in `scripts/status_build.py` and `scripts/legistar_harvest.py`. The parish posts
-  a "Council" report covering every category.
+  `$SCP_CIVICS_DATA/`, run `pdftotext -layout`, and read the page images, since the text run can't
+  show which remark belongs to which row. Write a new `index/parish_tracker_<yyyy-mm>.csv` of the
+  lines it prints, with `july_project` and `plan_rows` carried from the line each continues. Change
+  the file names in `scripts/status_build.py` and `scripts/legistar_harvest.py`, and the dates
+  they hard-code: the `parish_report_<date>` column and the "not listed" status label. A report can
+  omit lines, as October's "Active Projects" did, so keep the older file and its column.
 - **New budget:** the capital outlay lines are on the "Narrative Explanation of Capital Outlay"
   pages for funds 112, 123, 312 and 313 of the proposed or approved budget attached to the
   budget ordinance. Write a new `index/budget_<year>_<proposed|approved>.csv`.

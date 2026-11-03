@@ -174,14 +174,38 @@ def attachment_url(a):
     return ATTACH + a["MatterAttachmentFileName"] if a.get("MatterAttachmentFileName") else a["MatterAttachmentHyperlink"]
 
 
-def parish_report(tracker_csv):
-    """Latest parish capital report lines, keyed by the bare project number."""
-    by_no = {}
-    if Path(tracker_csv).exists():
-        for r in csv.DictReader(open(tracker_csv)):
-            m = PROJ_NO.search(r["project_no"].replace(" ", ""))
-            by_no.setdefault(m.group(1).split("-")[0] if m else "", []).append(r)
-    return by_no
+def bare_no(project_no):
+    m = PROJ_NO.search(project_no.replace(" ", ""))
+    return m.group(1).split("-")[0] if m else ""
+
+
+# The 10/8/2026 report prints P260803 on this line, but the council title under that number
+# (2026-0265) is the pump station's design refinement. Joining by number would pin it to that row.
+NOT_JOINED_BY_NUMBER = {"Engineers Canal Crossing at CPKC Railroad"}
+
+
+def parish_report(tracker_csv, prior_csv):
+    """Parish capital report lines by bare project number, and the same lines by their July number.
+
+    The newest report lists active projects only, so an older line it doesn't continue is kept
+    with its date. The second dict lets a project the parish renumbered still reach its council
+    matters, which are filed under the old number.
+    """
+    by_no, by_old_no = {}, {}
+    current = list(csv.DictReader(open(tracker_csv))) if Path(tracker_csv).exists() else []
+    prior = list(csv.DictReader(open(prior_csv))) if Path(prior_csv).exists() else []
+    continued = {r["july_project"] for r in current}
+    old_no = {r["project"]: bare_no(r["project_no"]) for r in prior}
+    for r in current:
+        by_no.setdefault("" if r["project"] in NOT_JOINED_BY_NUMBER else bare_no(r["project_no"]), []).append(r)
+        old = old_no.get(r["july_project"], "")
+        if old and old != bare_no(r["project_no"]):
+            by_old_no.setdefault(old, []).append(r)
+    for r in prior:
+        if r["project"] not in continued:
+            by_no.setdefault(bare_no(r["project_no"]), []).append(
+                r | {"status": f"{r['status']} (report of 7/31/2026; not listed 10/8/2026)"})
+    return by_no, by_old_no
 
 
 def completion_docs(matter_id):
@@ -190,7 +214,7 @@ def completion_docs(matter_id):
                    if k.lower() in n.lower()})
 
 
-def projects(matters_csv, out, status_csv, attachments, tracker_csv):
+def projects(matters_csv, out, status_csv, attachments, tracker_csv, prior_csv):
     """Roll the harvested matters up to one row per parish project number."""
     plan = {}
     if Path(status_csv).exists():
@@ -200,8 +224,8 @@ def projects(matters_csv, out, status_csv, attachments, tracker_csv):
                 plan.setdefault(f, [])
                 if label not in plan[f]:
                     plan[f].append(label)
-    report = parish_report(tracker_csv)
-    told = lambda no, f: " || ".join(f(t) for t in report.get(no.split("-")[0], []))
+    report, renumbered = parish_report(tracker_csv, prior_csv)
+    told = lambda no, f: " || ".join(f(t) for t in report.get(no.split("-")[0], []) + renumbered.get(no.split("-")[0], []))
     groups = {}
     for r in csv.DictReader(open(matters_csv)):
         if r["status"] not in ("Enacted", "Approved"):
@@ -241,7 +265,7 @@ def projects(matters_csv, out, status_csv, attachments, tracker_csv):
         last = ms[-1]
         rows.append({
             "project_no": no,
-            "name": NAMES.get(no) or (max(set(names), key=names.count) if names else ""),
+            "name": NAMES.get(no) or (max(sorted(set(names)), key=lambda n: (names.count(n), len(n))) if names else ""),
             "kind": "levee system" if LEVEE.search(text) else "drainage",
             "phase": phase,
             "contractor": contractor,
@@ -294,7 +318,7 @@ def main():
     if a.cmd == "projects":
         projects(here / "index" / "legistar_matters.csv", here / "index" / "parish_projects.csv",
                  here / "index" / "status.csv", not a.no_attachments,
-                 here / "index" / "parish_tracker_2026-07.csv")
+                 here / "index" / "parish_tracker_2026-10.csv", here / "index" / "parish_tracker_2026-07.csv")
         return
     terms = TERMS
     if a.terms_file:

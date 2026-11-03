@@ -65,12 +65,13 @@ Search in this order. Each is a place where a plan project leaves a dated trace.
    Acceptance are filed as attachments on the award or change-order matter, so run `track` on
    those and open the certificate for the date. State-funded work can have a separate
    resolution accepting the work as complete.
-2. **Parish capital projects reports.** Public Works posts a status report per category
-   (Drainage, Levees, Roadway, Wastewater, Miscellaneous) and a council summary at
-   `https://www.stcharlesparish.gov/departments/public-works/capital-projects`. Each line gives
+2. **Parish capital projects reports.** Public Works posts status reports covering Drainage,
+   Levees, Roadway, Wastewater and Miscellaneous at
+   `https://www.stcharlesparish.gov/departments/public-works/capital-projects`. As of 2026-11-03
+   that page listed one combined report, "2026 10 Capital Projects" (updated 10/8/2026), headed "Active Projects": it leaves out lines the July report carried, so a missing line isn't a closed one. Each line gives
    status, estimated construction cost, schedule and remarks, and some cite the plan priority the
    project implements. The site refuses scripted requests, so save the PDF through a browser into
-   `$SCP_CIVICS_DATA/`, then write a new dated `index/parish_tracker_<yyyy-mm>.csv` and point `scripts/status_build.py` and `scripts/legistar_harvest.py` at it. The "Council" report covers every category, including the Levee page where the Montz pump stations are listed. Downloaded council attachments go in `$SCP_CIVICS_DATA/council-attachments/` with a `.txt` beside each (`ocrmypdf --force-ocr --sidecar` for scans); attachment links printed by the API return 404, and `agendas.py track` prints the working form. These are the
+   `$SCP_CIVICS_DATA/`, then write a new dated `index/parish_tracker_<yyyy-mm>.csv` and point `scripts/status_build.py` and `scripts/legistar_harvest.py` at it, following the ledger's maintenance notes. The combined report covers every category, including the Levee page where the Montz pump stations are listed. Downloaded council attachments go in `$SCP_CIVICS_DATA/council-attachments/` with a `.txt` beside each (`ocrmypdf --force-ocr --sidecar` for scans); attachment links printed by the API return 404, and `agendas.py track` prints the working form. These are the
    parish's claims: keep them apart from council records.
 3. **Capital budget.** The annual budget ordinance and its capital projects schedule list
    drainage projects by name with amounts, by year. Comparing consecutive years shows what moved.

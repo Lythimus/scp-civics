@@ -72,7 +72,7 @@ Add these to the draft as next steps, and run them only if asked. Files can take
 | Federal spill reports | `bayou:csb-nrc-hazmat` | [National Response Center](https://nrc.uscg.mil) data downloads |
 | Air monitors nearby | `bayou:public-air-monitors` | Say the check wasn't run |
 | Facility's records from the parish | `scp-civics:scp-prr` | Same |
-| LDEQ's or another agency's records | `bayou:la-public-records-request` | Write the custodian under R.S. 44:1 et seq. ([legis.la.gov](https://legis.la.gov)); `scp-civics:scp-prr` has the method |
+| LDEQ's or another agency's records | `bayou:la-public-records-request` | Write the custodian under R.S. 44:1 et seq. ([legis.la.gov search by title and section](https://legis.la.gov/legis/LawSearch.aspx)); `scp-civics:scp-prr` has the method |
 
 For a project still being rezoned, permitted or given incentives, use `scp-civics:scp-case-check`, `scp-civics:scp-watch` or `scp-civics:scp-incentives`.
 

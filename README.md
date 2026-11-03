@@ -15,6 +15,7 @@ It records how parish processes work and where the records are, including what t
 | `scp-civics:scp-watch` | A standing search for a project, applicant, place or topic across the Herald-Guide legal notices and Parish Council matters on Legistar, reporting only what is new since the last run. The watch lives in your project folder. |
 | `scp-civics:scp-meeting-record` | What was said and voted at a parish meeting: finds the recording, makes a timestamped transcript (YouTube captions or local Whisper), checks it against the agenda, flags garbled names against a roster of officials and board members, and checks quotes and votes against Legistar |
 | `scp-civics:scp-incentives` | Tracing a project's PILOT lease, bonds and tax exemptions through the Industrial Development Board, Parish Council, State Bond Commission and ITEP: signed minutes, audits, Council consent, the resident-hiring policy, and the taxing bodies affected. |
+| `scp-civics:scp-budget` | What the parish budgeted or spent on a project, fund or department: proposed and adopted budgets, amendments, capital projects reports and council districts, Council millages by tax year, sales tax, audits and how a budget gets adopted. Keeps requested, adopted, amended and spent amounts apart |
 | `scp-civics:scp-facilities` | Which industrial sites are registered at an address or near a point, with LDEQ AI and EPA IDs, and who to call about an odor, flare, spill or release at that hour. Drafts the report for you to make; it doesn't name a source from a smell |
 | `scp-civics:scp-ordinances` | Searching the parish code, Charter, zoning and subdivision appendices from a local copy, reading a section by number, and checking Legistar for later amendments |
 | `scp-civics:scp-master-drainage-plan` | Checking a proposed project against the parish Master Drainage Plan: which study covers the site, which planned improvements it touches, what they cost, and whether they have been funded or built |
@@ -30,7 +31,7 @@ The plugin drafts and researches. At your request it can fill the parish records
 /plugin install scp-civics@scp-civics
 ```
 
-Some scripts need Python 3. Herald-Guide OCR also needs `poppler` and `tesseract`. Code search needs `poppler`. Meeting transcripts need `yt-dlp` for YouTube captions, or `ffmpeg` and `uv` for local Whisper, whose model is a download of about 3 GB.
+Some scripts need Python 3. Herald-Guide OCR also needs `poppler` and `tesseract`. Code search, `scp-incentives` and `scp-budget` need `poppler`. Meeting transcripts need `yt-dlp` for YouTube captions, or `ffmpeg` and `uv` for local Whisper, whose model is a download of about 3 GB.
 
 ## Using it with bayou
 
@@ -42,6 +43,7 @@ This plugin works alone. [Bayou Blockade](https://github.com/Lythimus/bayou-bloc
 | `parish-council-agendas` | Searching agendas, minutes and legislation | Use [parish Legistar](https://stcharlesgov.legistar.com) directly |
 | `parish-assessor-gis` | Parcel, owner and zoning lookups | Use the parish assessor's site |
 | `itep-lookup`, `la-bond-dockets` | Incentive and bond records | Use LED FastLane and State Bond Commission agendas |
+| `la-legislative-auditor` | Audit reports for the parish, its Industrial Development Board and other local bodies | Use the By Agency tab at [lla.la.gov](https://lla.la.gov/reports/audit-reports) or the parish's audits page, in a browser |
 | `eclerks-land-index` | Acts of conveyance and notices of lease for an incentive trace | Use the Clerk of Court's eClerks; you buy any pass |
 | `hearing-prep --debrief` | Comparing a meeting transcript with prepared questions | `scp-meeting-record` writes its own record |
 | `ldeq-permit-status`, `ldeq-edms-search`, `epa-echo-search`, `epa-rmp-lookup`, `wind-history` and others | A facility's permits, files, compliance, filings and the wind at the time | `scp-facilities` links each agency's own site, and NWS observations for the wind |

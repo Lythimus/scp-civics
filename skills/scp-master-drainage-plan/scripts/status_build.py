@@ -74,10 +74,19 @@ MATCH=[
 ('mimosa-willowdale','','Willowdale Pump Station','Funded','',['2026-0328'],
  D+' Willowdale Pump Station Sump Improvements (P241102): Amendment No. 2 (not to exceed $315,610.00, overall $351,560.00) was at public hearing as of this ledger; the original agreement was not found by title search. The plan prints this row\'s cost as TBD.','',''),
 ]
-TR=collections.defaultdict(list)
-for t in csv.DictReader(open(SK/'index/parish_tracker_2026-07.csv')):
-    for pr in t['plan_rows'].split('; '):
-        if pr: TR[pr].append(f"{t['project']} ({t['project_no']}): {t['status']}, est. construction {t['est_construction_cost']}, {t['est_start']} to {t['est_end']}. {t['remarks']}" + (f" July: {t['july_note']}" if t['july_note'] else '') + (f" Report says: {t['plan_reference_in_report']}." if t['plan_reference_in_report'] else ''))
+def report_lines(path,note_field):
+    """{plan row: [one line of text per report line that cites it]} for one parish report."""
+    by=collections.defaultdict(list)
+    for t in csv.DictReader(open(SK/'index'/path)):
+        for pr in t['plan_rows'].split('; '):
+            if not pr: continue
+            note=t.get(note_field) or ''
+            by[pr].append(f"{t['project']} ({t['project_no']}): {t['status']}, est. construction {t['est_construction_cost']}, {t['est_start']} to {t['est_end']}. {t['remarks']}"+(f" {NOTE_LABEL[note_field]}: {note}" if note else '')+(f" Report says: {t['plan_reference_in_report']}." if t.get('plan_reference_in_report') else ''))
+    return by
+NOTE_LABEL={'july_note':'July','new_comments':'New in report'}
+# October lists active projects only, so a line missing from it keeps its July text and isn't closed.
+TR_JUL=report_lines('parish_tracker_2026-07.csv','july_note')
+TR_OCT=report_lines('parish_tracker_2026-10.csv','new_comments')
 rows=[r for r in csv.DictReader(open(SK/'index/projects.csv')) if r['row_kind']=='project']
 skip=[r for r in rows if 'townhall' in r['doc'] or 'public-meeting' in r['doc']]
 rows=[r for r in rows if r not in skip]
@@ -92,9 +101,12 @@ for r in rows:
     kk=(r['doc'],r['page'],r['table'],r['project_id']); seenk[kk]+=1
     base=dict(doc=r['doc'],page=r['page'],table=r['table'],project_id=r['project_id'],row=seenk[kk],name=r['name'],plan_cost=cost,as_of=AS_OF)
     lab=d+' '+(r['project_id'] or r['name'])
-    tr=list(TR.get(lab,[]))
-    if d=='new-sarpy' and r['project_id'].startswith('2-') and 'under cn rr' in r['name'].lower(): tr+=TR.get('new-sarpy 2-x (CN RR crossings)',[])
-    base['parish_report_2026_07_31']=' || '.join(tr)
+    def told(tr):
+        lines=list(tr.get(lab,[]))
+        if d=='new-sarpy' and r['project_id'].startswith('2-') and 'under cn rr' in r['name'].lower(): lines+=tr.get('new-sarpy 2-x (CN RR crossings)',[])
+        return ' || '.join(lines)
+    base['parish_report_2026_07_31']=told(TR_JUL)
+    base['parish_report_2026_10_08']=told(TR_OCT)
     base['links']=' '.join(M[f]['url'] for f in hit[5]) if hit else ''
     if hit:
         base.update(status=hit[3],built_scope=hit[4],parish_source=src(hit[5]),parish_source_date=last(hit[5]),independent_source=hit[7],independent_source_date=hit[8],notes=hit[6])
@@ -104,7 +116,7 @@ for r in rows:
     out.append(base)
 for i,m in enumerate(MATCH):
     if not used[i]: sys.exit(f'unmatched rule {m[:3]}')
-F=['doc','page','table','project_id','row','name','plan_cost','status','built_scope','parish_source','parish_source_date','independent_source','independent_source_date','as_of','notes','parish_report_2026_07_31','links']
+F=['doc','page','table','project_id','row','name','plan_cost','status','built_scope','parish_source','parish_source_date','independent_source','independent_source_date','as_of','notes','parish_report_2026_07_31','parish_report_2026_10_08','links']
 with open(SK/'index/status.csv','w',newline='') as f:
     w=csv.DictWriter(f,fieldnames=F); w.writeheader(); w.writerows(out)
 print(len(out),'rows;',len(skip),'deck rows skipped'); print(collections.Counter(o['status'] for o in out))

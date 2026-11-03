@@ -63,6 +63,8 @@ Sheriffs are covered by R.S. 44:3. Read the current text for any class the reque
 
 **The office's own position.** Its page says that, other than the initial report, criminal offense records "are generally considered privileged" until adjudicated. It lists classes it treats as privileged even after adjudication, such as investigative reports, supplemental reports and statements, releasable only by court order. That list is the office's statement and is broader in places than the statute's wording. Tell the user what to expect, and do not argue it in a first letter.
 
+Before a request about a stop, arrest or incident, ask which agency handled it. If it wasn't the Sheriff's Office, that agency holds its own records.
+
 Inmates requesting their own medical records must send the page's HIPAA form with an original signature.
 
 Unestablished: how courts treat pending versus closed matters, and how they read "investigative technical equipment". `bayou:la-court-opinions` was not run for this file. If the request depends on either, run it, or tell the user this was not researched.

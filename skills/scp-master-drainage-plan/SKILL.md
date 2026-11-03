@@ -32,7 +32,7 @@ IDX=$SKILL/scripts/mdp_index.py                    # executable; stdlib Python 3
 | `references/status-ledger.md`, `index/status.csv` | What council records show as funded, under construction or built, per plan row, with an as-of date |
 | `index/legistar_matters.csv` | Raw harvest of council legislation titles since 2020. Refresh with `scripts/legistar_harvest.py` |
 | `index/parish_projects.csv` | Every parish drainage and levee project the council has acted on since 2020, by parish project number, with phase, contractor, award and matched plan rows. Rebuild with `scripts/legistar_harvest.py projects` |
-| `index/parish_tracker_2026-07.csv` | The parish's own capital projects report of 2026-07-31, one row per drainage or levee project line: status, estimated construction cost, schedule, remarks, the plan priority the report cites, and matched plan rows. `index/parish_tracker.csv` is the 2026-05-29 drainage report it was built from. Source PDFs and text: `$SCP_CIVICS_DATA/scp-capital-*.pdf` |
+| `index/parish_tracker_2026-10.csv` | The parish's own capital projects report updated 10/8/2026, one row per drainage or levee line it prints: status, estimated construction cost, schedule, remarks, new comments, and matched plan rows. It's headed "Active Projects" and lists 27 lines, so a line missing from it isn't closed. `index/parish_tracker_2026-07.csv` is the 2026-07-31 report (58 lines, with the plan priority it cites), and `index/parish_tracker.csv` is the 2026-05-29 drainage report. Source PDFs and text: `$SCP_CIVICS_DATA/scp-capital-*.pdf` |
 | `index/budget_2027_proposed.csv` | Drainage and flood protection capital outlay lines requested in the 2027 proposed budget |
 | `scripts/status_build.py`, `scripts/status_ledger_md.py` | Generators for `index/status.csv` and `references/status-ledger.md`. New evidence goes in the MATCH list in `status_build.py`; hand edits to either output are overwritten |
 | `$SCP_CIVICS_DATA/council-attachments/` | Council attachments already downloaded (contracts, bid tabulations, completion certificates, the 2027 proposed budget), each with a `.txt` beside it. Check here before downloading |
@@ -210,8 +210,8 @@ When a search changes a row, change the MATCH list in `scripts/status_build.py`,
 For "what has the parish built or started near X", search `index/parish_projects.csv` by name
 first: it also holds the projects that match no plan row. Its `award_link` and `links` columns open the
 Legistar pages whose attachments are the technical record (contract, bid tabulation, scope
-exhibits, completion certificates). `index/parish_tracker_2026-07.csv` gives the parish's stated status
-and cost for the same projects; a newer report replaces it (see the ledger for the source page). Report each plan
+exhibits, completion certificates). `index/parish_tracker_2026-10.csv` gives the parish's stated status
+and cost for active projects, and the July file has the lines October left out (see the ledger for the source page). Report each plan
 project as one of: built, under construction, funded, application submitted, no record found.
 "No record found" is not "not built."
 
