@@ -1,6 +1,6 @@
 {
   "name": "scp-civics",
-  "description": "St. Charles Parish, Louisiana civic research: land-use procedure and where its records live, Master Drainage Plan project checks, and drafting public records requests to parish custodians, with parish form filling up to Submit. Works alone; the bayou plugin adds the statewide research skills these point to.",
+  "description": "St. Charles Parish, Louisiana civic research: land-use procedure and where its records live, searching the code of ordinances, Master Drainage Plan project checks, and drafting public records requests to parish custodians, with parish form filling up to Submit. Works alone; the bayou plugin adds the statewide research skills these point to.",
   "version": "0.1.0",
   "author": { "name": "Joseph Coco" },
   "homepage": "https://github.com/Lythimus/scp-civics",

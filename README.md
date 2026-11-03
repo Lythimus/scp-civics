@@ -10,7 +10,8 @@ It records how parish processes work and where the records are, including what t
 
 | Skill | Use it for |
 |---|---|
-| `scp-civics:scp-land-use-process` | Rezonings, Future Land Use Map amendments, plats and waivers, notice rules, Herald-Guide legal notices, Legistar quirks, the parish code on Municode, the Industrial Development Board, parish contacts |
+| `scp-civics:scp-land-use-process` | Rezonings, Future Land Use Map amendments, plats and waivers, notice rules, Herald-Guide legal notices, Legistar quirks, the Industrial Development Board, parish contacts |
+| `scp-civics:scp-ordinances` | Searching the parish code, Charter, zoning and subdivision appendices from a local copy, reading a section by number, and checking Legistar for later amendments |
 | `scp-civics:scp-master-drainage-plan` | Checking a proposed project against the parish Master Drainage Plan: which study covers the site, which planned improvements it touches, what they cost, and whether they have been funded or built |
 | `scp-civics:scp-prr` | Getting records from a St. Charles Parish body: finds the custodian, asks what decides scope and speed, drafts the request, can fill the parish portal form up to Submit, and covers follow-up |
 
@@ -23,7 +24,7 @@ The plugin drafts and researches. At your request it can fill the parish records
 /plugin install scp-civics@scp-civics
 ```
 
-Some scripts need Python 3. Herald-Guide OCR also needs `poppler` and `tesseract`.
+Some scripts need Python 3. Herald-Guide OCR also needs `poppler` and `tesseract`. Code search needs `poppler`.
 
 ## Using it with bayou
 
@@ -44,6 +45,16 @@ This plugin works alone. [Bayou Blockade](https://github.com/Lythimus/bayou-bloc
 The source PDFs are not included; the parish publishes them on its website. The Apache license covers this project's own work, and the plan documents remain parish records. `corpus/STATUS.md` records what was verified in the conversion, and `references/adding-documents.md` describes the method.
 
 To check against your own copies of the PDFs and council attachments, set `SCP_CIVICS_DATA` to their folder.
+
+## Parish code
+
+This repository doesn't include the code's text. To use `scp-ordinances`, save a whole-code PDF from [Municode](https://library.municode.com/la/st._charles_parish/codes/code_of_ordinances) in your browser, set `SCP_CIVICS_DATA`, and build a local index:
+
+```
+python3 skills/scp-ordinances/scripts/code_search.py build "<pdf>"
+```
+
+## Your details
 
 To keep your requester details out of the repository, copy `skills/scp-prr/profile.example.md` elsewhere and set `SCP_CIVICS_PROFILE` to the copy.
 

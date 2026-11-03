@@ -39,7 +39,7 @@ If the custodian file says something is unestablished or is a stub, tell the use
 A request for something posted online costs everyone time. Check first, and name what was found in the draft so it is not produced again.
 
 - Agendas, minutes, ordinances, packet attachments: `bayou:parish-council-agendas` if available, otherwise https://stcharlesgov.legistar.com directly.
-- Code of ordinances: `scp-civics:scp-land-use-process` covers how to reach Municode.
+- Code of ordinances: `scp-civics:scp-ordinances`.
 - Drainage plan documents: `scp-civics:scp-master-drainage-plan`.
 - Parish web pages: open them in the browser if a script gets a 403.
 

@@ -4,13 +4,7 @@ These notes were read on Municode, Supplement 77 (updated 10/15/2026), on 2026-1
 
 These are notes, not the verbatim text. Save a dated excerpt in the case folder for anything you quote: Appendix A Sec. XV, Charter Art. III §C.4, Appendix C, and R.S. 33:101, 106–109, 4721, 4724, 4725 and 4780.40–.45.
 
-| Municode nodeId | Holds |
-|---|---|
-| `PTIIPACO_APXASTCHPAZOOR1981_SXVAMPR` | Appendix A (Zoning Ordinance of 1981), Sec. XV: Amendment procedure |
-| `PTIIPACO_APXCSTCHPASURE1981` | Appendix C (Subdivision Regulations of 1981), the whole appendix on one page (~172K chars) |
-| `PTISTCHPA` | Home Rule Charter |
-
-URL form: `https://library.municode.com/la/st._charles_parish/codes/code_of_ordinances?nodeId=<id>`
+To find or check code text, and for Municode node IDs, use `scp-civics:scp-ordinances`.
 
 ## Rezoning (Appendix A Sec. XV)
 
