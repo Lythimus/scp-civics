@@ -108,7 +108,7 @@ Sec. IV.5 requires "a comprehensive drainage impact analysis of all proposed sub
 - Check each other requested waiver against "impracticable" or "undue hardship" (App. C II.E.4.c, V.B.1). Financial hardship doesn't count.
 - For an industrial park or development, say that the plat hearing may be the last public one, because later resubdivision takes only two signatures (V.B.2).
 - Note the protest route (R.S. 33:4780.44) for a rezoning, and whether a parcel check has been run with `bayou:parish-assessor-gis` or the parish assessor.
-- Ask what transcript reached the Council (XV.A.2). Report what the record holds, and whether an attachment labelled "Minutes" or an excerpt is the verbatim transcript is a question.
+- Ask what transcript reached the Council (XV.A.2). Report what the record holds, and whether an attachment labelled "Minutes" or an excerpt is the verbatim transcript is a question. For what was said and how the vote went, use `scp-civics:scp-meeting-record`; its machine transcript isn't that verbatim transcript.
 
 ## 8. Write the report
 
