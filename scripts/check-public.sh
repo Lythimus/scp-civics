@@ -17,7 +17,8 @@ case "$email" in
   *) report "git user.email is not a GitHub noreply address, so commits would publish it" ;;
 esac
 
-generic='/Users/|/home/[a-z]|~/Documents|~/\.claude'
+# /home/ counts only at the start of a path, because web URLs often contain it mid-path.
+generic='/Users/|(^|[[:space:]"'"'"'`(=])/home/[a-z]|~/Documents|~/\.claude'
 if hits=$(git grep --cached -nIE "$generic" -- . ':!scripts/check-public.sh' ':!CLAUDE.md'); then
   report "local paths in tracked files:"
   echo "$hits" | cut -c1-160 >&2

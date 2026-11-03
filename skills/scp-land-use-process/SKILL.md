@@ -21,7 +21,7 @@ HG=$SK/scripts/hg_legals.py            # Herald-Guide fetch / OCR / grep (stdlib
 - **Planning & Zoning Commission:** hears rezonings, Future Land Use Map amendments and preliminary plats, and recommends to the Council. Under the Charter it is the zoning commission. It meets on Thursdays at 6 PM in Council Chambers, usually monthly (2026: 10/8, 11/5 cancelled, 12/3; then 1/7/2027).
 - **Parish Council:** adopts rezoning ordinances, gives final plat approval, and passes the "supporting resolution" every subdivision waiver needs.
 - **Zoning Board of Adjustment:** variances. It is a separate body, so don't call the Commission "the zoning board".
-- **Industrial Development Board of the Parish of St. Charles, Louisiana, Inc.:** PILOT leases and conduit revenue bonds. It meets a few times a year at 11:30 AM. It is **its own records custodian**: it adopted the Council's fee schedule by its own resolution, so a parish records request may not reach its files. How to submit to it: `scp-civics:la-prr-submission`.
+- **Industrial Development Board of the Parish of St. Charles, Louisiana, Inc.:** PILOT leases and conduit revenue bonds. It meets a few times a year at 11:30 AM. It is **its own records custodian**: it adopted the Council's fee schedule by its own resolution, so a parish records request may not reach its files. How to submit to it: `scp-civics:scp-prr`.
 - **Coastal Zone Management Section:** coastal use permits under the parish program (`SCP-yyyy-nn`), noticed in the Herald-Guide; see `bayou:la-coastal-use-permits`. The contact is 985-783-5060.
 
 ## Where records are
