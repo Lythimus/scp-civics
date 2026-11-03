@@ -45,7 +45,7 @@ List every step the case type requires, with its date and source, or "not found"
 | Variance | Rejection letter, Board hearing and written findings of fact, one-year expiration, appeal to court (App. A Sec. XIII) |
 | Special permit or special exception use | Read App. A Sec. IV with `scp-civics:scp-ordinances`. The reference file doesn't cover these |
 
-A Legistar status is a label, not an outcome. "Enacted" with a blank enactment number means the result isn't established: check the matter's history, then the minutes. If the last action is postponed, withdrawn or failed, report that action and the contradicting status. Commission minutes can stay marked "Draft".
+A Legistar status is a label, not an outcome. "Enacted" with a blank enactment number means the result isn't established: check the matter's history, then the minutes. If the last action is postponed, withdrawn or failed, report that action and the contradicting status. Commission minutes stay marked "Draft" in the API. Signed minutes, with votes by name, are attached to the meeting page once a later meeting approves them.
 
 Compare what each stage names: lots, acreage, zoning districts and purpose, across the Commission notices, Commission agenda, Council notices, ordinance and map exhibit. Report each difference in a table, without assuming which one is right.
 

@@ -2,10 +2,10 @@
 
 Full name: Industrial Development Board of the Parish of St. Charles, Louisiana, Inc. A nonprofit corporation with seven directors appointed by the Parish Council. It handles PILOT leases and conduit revenue bonds, meets a few times a year at 11:30 AM, and holds its own files.
 
-**What is established (as of 2026-11-02):**
+**What is established (as of 2026-11-03):**
 - The IDB adopted the Council's Public Records Fee Schedule as its own (Res. 2026-5, 10/26/2026 agenda). That confirms it treats itself as a separate custodian.
 - Its agenda contact block is the Council's: Courthouse, 15045 Highway 18 (parish pages also say River Road), P.O. Box 302, Hahnville, LA 70057; 985-783-5125 (Council Secretary's line).
-- Web search found no IDB-specific records contact, phone, email, web page or portal. Legistar shows no minutes or attachments for its 2026 meetings.
+- Web search found no IDB-specific records contact, phone, email, web page or portal. Legistar lists its meetings only from 2025-12-22. As of 2026-11-03, signed minutes with adopted resolutions were attached to the meeting pages for 12/22/2025 and 4/23/2026, and not yet for 7/27 or 10/26/2026; the Legistar API returns none of them. Earlier records, leases and the applicant's file have to be requested. `scp-civics:scp-incentives` lists what is public.
 
 **What is NOT established:** who the IDB's records custodian is, and whether it takes requests by email or through the parish JustFOIA portal. Do not tell the user either is confirmed.
 

@@ -9,6 +9,7 @@
   meeting_record.py names --transcript FILE.txt [--known NAME ...]
   meeting_record.py quote --transcript FILE.txt --text "words as quoted"
   meeting_record.py votes --event ID
+  meeting_record.py documents --event ID [--dir DIR]
   meeting_record.py roster [--write FILE]
 
 Transcripts, audio and reports go in the user's project folder, never in the plugin.
@@ -469,6 +470,50 @@ def board_members(board_id):
     return rows
 
 
+def parse_documents(page):
+    """(name, url) for each file on a Legistar meeting page, which the web API doesn't return."""
+    docs = []
+    for href, label in re.findall(r'href="(View\.ashx\?M=(?:AO|M)&[^"]*)"[^>]*>(.*?)</a>', page, flags=re.S):
+        name = squash(re.sub(r"<[^>]+>", " ", label))
+        docs.append((name, "https://stcharlesgov.legistar.com/" + html.unescape(href)))
+    return docs
+
+
+def meeting_documents(event):
+    url = legistar(f"/events/{event}")["EventInSiteURL"]
+    return parse_documents(fetch(url).decode("utf-8", "ignore"))
+
+
+def save_document(name, url, folder):
+    """Save a meeting file and its text layer, returning (pdf path, word count)."""
+    folder = Path(folder)
+    folder.mkdir(parents=True, exist_ok=True)
+    pdf = folder / (re.sub(r"[^\w.-]+", "_", name) + ".pdf")
+    if not pdf.exists():
+        pdf.write_bytes(fetch(url))
+    text = pdf.with_suffix(".txt")
+    if not text.exists():
+        subprocess.run(["pdftotext", "-layout", str(pdf), str(text)], capture_output=True)
+    return pdf, len(text.read_text(errors="ignore").split()) if text.exists() else 0
+
+
+def cmd_documents(a):
+    if a.dir:
+        check_output(a.dir)
+    event = legistar(f"/events/{a.event}")
+    print(f"{event['EventBodyName'].strip()} {event['EventDate'][:10]}: {event['EventInSiteURL']}")
+    docs = parse_documents(fetch(event["EventInSiteURL"]).decode("utf-8", "ignore"))
+    if not docs:
+        print("No files on the meeting page.")
+    for name, url in docs:
+        # Sign-in sheets can carry speakers' home addresses and aren't needed to check the record.
+        if a.dir and not re.search(r"sign.?in", name, re.I):
+            pdf, words = save_document(name, url, a.dir)
+            print(f"- {name}: {pdf} ({words} words of text)")
+        else:
+            print(f"- {name}: {url}")
+
+
 def cmd_roster(a):
     today = dt.date.today().isoformat()
     records = legistar("/officerecords", **{"$filter": f"OfficeRecordEndDate ge datetime'{today}'", "$top": "1000"})
@@ -522,6 +567,8 @@ def main():
     s.set_defaults(fn=cmd_quote)
     s = sub.add_parser("votes"); s.add_argument("--event", required=True, type=int)
     s.set_defaults(fn=cmd_votes)
+    s = sub.add_parser("documents"); s.add_argument("--event", required=True, type=int); s.add_argument("--dir")
+    s.set_defaults(fn=cmd_documents)
     s = sub.add_parser("roster"); s.add_argument("--write")
     s.set_defaults(fn=cmd_roster)
     a = p.parse_args()

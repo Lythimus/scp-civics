@@ -87,12 +87,15 @@ Adding names to a Whisper prompt didn't improve them: on the test meeting every 
 
 ```bash
 python3 "$MR" votes --event EVENT_ID
+python3 "$MR" documents --event EVENT_ID --dir <project folder>/minutes
 ```
+
+`documents` reads the Legistar meeting page, which holds files the API doesn't return. It saves each one with its text layer, skipping sign-in sheets, which it only lists. Signed minutes appear there after a later meeting approves them, even while the API still says "Draft" and has no minutes file.
 
 | Body | What exists, as of 2026-11-03 | How to report |
 |---|---|---|
 | Parish Council | Member votes from Legistar on many items, once the record is finished | Compare each spoken result with the API row. Report any difference, without saying which is right |
-| Commission, Zoning Board, IDB and others | No member votes in the API on the meetings sampled, and recent minutes marked "Draft" | Report the result "as spoken at <timestamp>". "Passes unanimously" isn't a roll call: say who the attendance shows, if known, and don't list individual votes. Check again once minutes post |
+| Commission, Zoning Board, IDB and others | No member votes in the API on the meetings sampled. Signed minutes attached to the meeting page give YEAS, NAYS and ABSENT by name, as sampled for the Commission and IDB | Use the signed minutes and compare them with the recording. If none are posted, report the result "as spoken at <timestamp>". "Passes unanimously" isn't a roll call: say who the attendance shows, if known, and don't list individual votes |
 
 An item can appear more than once, and an action with no vote row isn't a vote. A Legistar status is a label, so "Enacted" can sit on an item whose last action says otherwise. Check the history, the event item and the recording, and report any conflict.
 

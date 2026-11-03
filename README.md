@@ -14,6 +14,7 @@ It records how parish processes work and where the records are, including what t
 | `scp-civics:scp-case-check` | Auditing one rezoning, plat or variance from its case number: its path, notice day counts, deadlines, Future Land Use Map resolution, plat against drainage study, waivers, and questions for staff |
 | `scp-civics:scp-watch` | A standing search for a project, applicant, place or topic across the Herald-Guide legal notices and Parish Council matters on Legistar, reporting only what is new since the last run. The watch lives in your project folder. |
 | `scp-civics:scp-meeting-record` | What was said and voted at a parish meeting: finds the recording, makes a timestamped transcript (YouTube captions or local Whisper), checks it against the agenda, flags garbled names against a roster of officials and board members, and checks quotes and votes against Legistar |
+| `scp-civics:scp-incentives` | Tracing a project's PILOT lease, bonds and tax exemptions through the Industrial Development Board, Parish Council, State Bond Commission and ITEP: signed minutes, audits, Council consent, the resident-hiring policy, and the taxing bodies affected. |
 | `scp-civics:scp-ordinances` | Searching the parish code, Charter, zoning and subdivision appendices from a local copy, reading a section by number, and checking Legistar for later amendments |
 | `scp-civics:scp-master-drainage-plan` | Checking a proposed project against the parish Master Drainage Plan: which study covers the site, which planned improvements it touches, what they cost, and whether they have been funded or built |
 | `scp-civics:scp-comprehensive-plan` | What the 2030 Comprehensive Plan (2011) and its 2022 Update say about a place, parcel, Future Land Use category or topic, with document and page. Keeps the map designation apart from goals and recommendations, and says which map is current |
@@ -40,6 +41,7 @@ This plugin works alone. [Bayou Blockade](https://github.com/Lythimus/bayou-bloc
 | `parish-council-agendas` | Searching agendas, minutes and legislation | Use [parish Legistar](https://stcharlesgov.legistar.com) directly |
 | `parish-assessor-gis` | Parcel, owner and zoning lookups | Use the parish assessor's site |
 | `itep-lookup`, `la-bond-dockets` | Incentive and bond records | Use LED FastLane and State Bond Commission agendas |
+| `eclerks-land-index` | Acts of conveyance and notices of lease for an incentive trace | Use the Clerk of Court's eClerks; you buy any pass |
 | `hearing-prep --debrief` | Comparing a meeting transcript with prepared questions | `scp-meeting-record` writes its own record |
 | `la-coastal-use-permits`, `fema-flood`, `document-ocr` and others | Coastal permits, flood zones, scanned documents | The skill names the source, and says the check was not run |
 
