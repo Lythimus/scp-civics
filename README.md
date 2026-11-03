@@ -15,6 +15,7 @@ It records how parish processes work and where the records are, including what t
 | `scp-civics:scp-watch` | A standing search for a project, applicant, place or topic across the Herald-Guide legal notices and Parish Council matters on Legistar, reporting only what is new since the last run. The watch lives in your project folder. |
 | `scp-civics:scp-meeting-record` | What was said and voted at a parish meeting: finds the recording, makes a timestamped transcript (YouTube captions or local Whisper), checks it against the agenda, flags garbled names against a roster of officials and board members, and checks quotes and votes against Legistar |
 | `scp-civics:scp-incentives` | Tracing a project's PILOT lease, bonds and tax exemptions through the Industrial Development Board, Parish Council, State Bond Commission and ITEP: signed minutes, audits, Council consent, the resident-hiring policy, and the taxing bodies affected. |
+| `scp-civics:scp-facilities` | Which industrial sites are registered at an address or near a point, with LDEQ AI and EPA IDs, and who to call about an odor, flare, spill or release at that hour. Drafts the report for you to make; it doesn't name a source from a smell |
 | `scp-civics:scp-ordinances` | Searching the parish code, Charter, zoning and subdivision appendices from a local copy, reading a section by number, and checking Legistar for later amendments |
 | `scp-civics:scp-master-drainage-plan` | Checking a proposed project against the parish Master Drainage Plan: which study covers the site, which planned improvements it touches, what they cost, and whether they have been funded or built |
 | `scp-civics:scp-comprehensive-plan` | What the 2030 Comprehensive Plan (2011) and its 2022 Update say about a place, parcel, Future Land Use category or topic, with document and page. Keeps the map designation apart from goals and recommendations, and says which map is current |
@@ -43,6 +44,7 @@ This plugin works alone. [Bayou Blockade](https://github.com/Lythimus/bayou-bloc
 | `itep-lookup`, `la-bond-dockets` | Incentive and bond records | Use LED FastLane and State Bond Commission agendas |
 | `eclerks-land-index` | Acts of conveyance and notices of lease for an incentive trace | Use the Clerk of Court's eClerks; you buy any pass |
 | `hearing-prep --debrief` | Comparing a meeting transcript with prepared questions | `scp-meeting-record` writes its own record |
+| `ldeq-permit-status`, `ldeq-edms-search`, `epa-echo-search`, `epa-rmp-lookup`, `wind-history` and others | A facility's permits, files, compliance, filings and the wind at the time | `scp-facilities` links each agency's own site, and NWS observations for the wind |
 | `la-coastal-use-permits`, `fema-flood`, `document-ocr` and others | Coastal permits, flood zones, scanned documents | The skill names the source, and says the check was not run |
 
 ## Plan documents
