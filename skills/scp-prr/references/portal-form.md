@@ -17,7 +17,9 @@ The form says requests need not be in writing; a request can also be made throug
 | Email | Email | Yes | Profile. Notices go here |
 | Company/Organization | Text | No | Profile, usually blank |
 | Address | Text | No | **Blank by default.** Its "123 Example Drive" is placeholder text, not a value |
-| City, State, Zip | Text | No | Profile |
+| City | Text | No | Profile |
+| State | Text | No | Profile |
+| Zip | Text | No | Profile |
 | Department(s) | 24 checkboxes, none ticked | No | Set chosen ones to `true`. Exact labels below |
 | Description of Request | Textarea | Yes | Plain text. Line breaks collapse and Markdown shows literally. If it runs past about 2,700 characters, summarize and attach the letter |
 | Click here to view our Fee Schedule | Checkbox | No | **Leave alone.** Fees are in `fees.md` |

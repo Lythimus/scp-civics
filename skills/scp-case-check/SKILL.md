@@ -79,7 +79,7 @@ For each hearing still ahead, list these dates in order, with the rule behind ea
 
 - Latest first publication, sign and mailing, from `$DAYS` with only `--rule` and `--hearing`.
 - Commission withdrawal: Wednesday noon before the meeting (XV.F.1). Council withdrawal: Thursday noon before the hearing (XV.F.2).
-- Written-comment deadline: "ask staff" unless the record states it.
+- Written-comment deadline: "ask staff" unless the record states it. For the 12/3/2026 Commission meeting, staff gave the Friday 13 days ahead as the date for comments to go out with the agenda, and said later comments are handed out at the meeting and all go in the case file (see `scp-civics:scp-land-use-process`, "Before a Commission hearing"). Use that only as an estimate, and label it one.
 - Latest useful records request. R.S. 44:33(B) sets three days only to certify unavailability, not to produce, so send it now.
 
 If the Commission meeting was cancelled or moved, notices for the old date don't establish notice for the new one. Search for new notices and say whether any were found.

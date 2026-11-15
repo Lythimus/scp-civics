@@ -43,6 +43,7 @@ HG=$SK/scripts/hg_legals.py            # Herald-Guide fetch / OCR / grep (stdlib
 ## Contacts (from the record, 2026)
 
 - **Planning & Zoning:** 985-783-5060; P.O. Box 302, Hahnville, LA 70057. The Director in 2026 was Michael Albert, AICP.
+- **Written comments to the Planning & Zoning Commission:** email the department's Administrative Coordinator, Donya Hebert Wilson, at dhebert@stcharlesgov.net (P&Z staff email, 2026-11-13). The parish's Commission page lists the same address for agenda requests. No other comment address is published.
 - **Council Secretary:** 985-783-5125; Courthouse, 15045 Highway 18, Hahnville. This is also the contact block printed on the IDB's agendas.
 - **stcharlesparish.gov** returns 403 to scripts; open it in the browser.
 
@@ -63,6 +64,8 @@ The agenda and staff report post only about a week ahead, so a comment can't wai
 - What are the speaker rules: sign-up, time limit, yielding time, paper handouts?
 - What email address takes written questions? None is printed in the case records.
 - Who receives records requests for the IDB? Ask the Council Secretary.
+
+One data point, not a rule: for the 12/3/2026 meeting, P&Z staff said by email (2026-11-13) that comments emailed to the Administrative Coordinator and received by Friday 11/20 would go to the Commissioners with their agenda. That was 13 days ahead, before the staff report posted. Staff also said the Chair announces at the hearing that comments were received in favor or opposition. Rule E.2 of the Commission's Rules for Regular Meetings says only that the Chair "may" read submitted correspondence. Comments received after that date, staff said, are handed out to the Commissioners at the meeting, and all comments become part of the record and are placed in the case file. So the agenda date is when a comment reaches Commissioners ahead of the meeting, not a cutoff. Whether the case file goes to the Council with the recommendation wasn't stated. Ask for each meeting. Since the agenda date can fall before the staff report posts, a commenter can send on the record as it stands and supplement after the staff report.
 
 Record each answer with the name and date. A records request filed after the staff report posts won't come back before the hearing (R.S. 44:33(B) sets three days only to certify unavailability, not to produce), so send requests as soon as the case is noticed.
 

@@ -54,6 +54,7 @@ Use a background run the first time, since OCR takes minutes per issue. Later ru
 - **Commission meetings:** read https://stcharlesgov.legistar.com/Calendar.aspx in a browser. The Legistar API lists a Commission meeting only once its agenda posts, and on 2026-11-02 every matter introduced since 2026-08-01 had the body "Parish Council".
 - **Agenda items:** run `bayou:parish-council-agendas` with `alerts st-charles --term "<term>"`. It keeps no state, so compare with the last report. Without bayou, search the agendas on the calendar page by hand and say so.
 - **Zoning Board of Adjustment:** agendas are on the [parish's board page](https://www.stcharlesparish.gov/departments/planning-and-zoning/zoning-board-of-adjustment), not Legistar. The paper still carries its notices.
+- **L'Observateur (LaPlace) is not searched.** It is St. John the Baptist Parish's official journal, and the state housing agency's list of official journals gives St. Charles to the Herald-Guide. On 2026-11-13 the St. Charles parish filter on louisianapublicnotice.com returned only the Herald-Guide's weekly "Legal notices" items for the previous 30 days. Not established: whether a St. Charles applicant ever places a notice there. For a project on the St. John line, search louisianapublicnotice.com by parish and newspaper in a browser. L'Observateur's own notice pages failed on expired TLS certificates on 2026-11-12, so don't count on them.
 
 ## 5. Report
 
