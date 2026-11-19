@@ -1,8 +1,8 @@
 ---
 name: scp-prr
-description: Get records from a St. Charles Parish, Louisiana public body. Takes a plain description of the information wanted, works out which custodian holds it (parish government and council, Industrial Development Board, Sheriff's Office, Clerk of Court, School Board), asks the questions that decide scope and speed, drafts the public records request, and can fill the parish JustFOIA form in the browser up to but not including Submit. Also covers where and how to send a request and what to do afterward. Use when the user wants documents, emails or data from a St. Charles Parish body, or asks how to file or follow up on a records request there.
-argument-hint: "<what you want to find out or obtain>"
-allowed-tools: Bash, Read, Write, Grep, Glob, WebSearch, WebFetch, Skill, AskUserQuestion
+description: Get records from a St. Charles Parish, Louisiana public body, and follow up after sending. Takes a plain description of the information wanted, works out which custodian holds it (parish government and council, Industrial Development Board, Sheriff's Office, Clerk of Court, School Board, Assessor, Port of South Louisiana, levee districts and other separate bodies), asks the questions that decide scope and speed, drafts the public records request, and can fill the parish JustFOIA form up to but not including Submit. After sending (--after), it keeps a request log, computes the statutory dates, reads an acknowledgment, estimate, fee letter, denial or redaction against the current statute, indexes a production against the numbered items, drafts a follow-up, and states the R.S. 44:35 enforcement route. Use when the user wants documents, emails or data from a St. Charles Parish body, or when a custodian has replied, produced records, denied, charged or gone silent.
+argument-hint: "<what you want to find out or obtain> | --after <request, reply or production folder>"
+allowed-tools: Bash, Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, Skill, AskUserQuestion
 ---
 
 # St. Charles Parish public records requests
@@ -10,6 +10,8 @@ allowed-tools: Bash, Read, Write, Grep, Glob, WebSearch, WebFetch, Skill, AskUse
 The user describes what they want. This skill works out who holds it, narrows it, drafts it, and optionally fills the parish form. **The user sends it.** Never click Submit, solve a reCAPTCHA, tick an acknowledgment, send an email or mail anything.
 
 This is not legal advice, and the draft is not checked by a lawyer.
+
+**Already sent?** If the user passes `--after`, or brings a reply, a production, a fee letter, a denial or a silent custodian, go to "After sending" at the end and skip Steps 1 to 6.
 
 Reference files, all under `${CLAUDE_PLUGIN_ROOT}/skills/scp-prr/`:
 
@@ -20,7 +22,8 @@ Reference files, all under `${CLAUDE_PLUGIN_ROOT}/skills/scp-prr/`:
 | `references/custodians/parish.md` | Parish government or council records |
 | `references/custodians/idb.md` | Industrial Development Board records |
 | `references/custodians/scpso.md` | Sheriff's Office records |
-| `references/custodians/others.md` | Clerk of Court, School Board, anything else |
+| `references/custodians/others.md` | Clerk of Court, School Board, Assessor, DA, Coroner, Port, levee districts, the 911 and Hospital districts, Library, Housing Authority, anything else |
+| `references/after-sending.md` | After a request is sent: the log, the clock, reading a reply, indexing a production, follow-ups, enforcement |
 | `references/departments.md` | Choosing departments on the parish form |
 | `references/fees.md` | Parish requests involving paper, video, media or GIS, or when the user asks about parish cost. Sheriff's Office fees are in its custodian file |
 | `references/portal-form.md` | Before writing the parish field sheet or filling the form. It holds the full field map, so no page reading is needed to plan the values |
@@ -32,7 +35,7 @@ Decide from the subject, say which one and why in one sentence, and let the user
 
 The custodian still matters, because each public body keeps its own files and a request to one does not reach another. If the records plausibly sit with two bodies, produce one draft per body and say why. For the Industrial Development Board, expect two pieces by item: Council-office items (resolutions, minutes, Council consent) and board items (applicant file, lease, correspondence) sent to the board's president, as `references/custodians/idb.md` lays out. Sheriff's records, for instance, are not reached through the parish form, but the parish may hold its own copies of correspondence with the Sheriff's Office.
 
-If the custodian file says something is unestablished or is a stub, tell the user rather than filling the gap from memory.
+If the custodian file says something is unestablished or is a stub, tell the user rather than filling the gap from memory. Which offices sit outside parish government, and why, is in `scp-civics:scp-government` (`references/structure.md`).
 
 ## Step 2: Check it is not already public
 
@@ -101,7 +104,18 @@ Tell the user:
 - Parish portal tracking: https://stcharlesparishla.justfoia.com/publicportal/home/track needs both the request number and the security key. Keep them in private notes; anyone holding both can see the request and the requester's form details.
 - **Other custodians:** there is no portal. For the Sheriff's Office, follow "Hand-back for this custodian" in its file.
 - The statutory dates, computed from the send date with legal holidays excluded (from the receipt date for the Sheriff's Office), and a suggestion to put them on a calendar.
-- What comes next, from `references/general-rules.md`: checking the production against each numbered item and how to follow up.
+- What comes next: start a row in the project's `prr-log.md` (`references/after-sending.md` section 1), and run this skill with `--after` when a reply or production arrives.
 - Productions are often scanned images. `bayou:document-ocr` handles them; without bayou, name the files as needing OCR and say it was not run.
+
+## After sending (`--after`)
+
+Read `references/after-sending.md` and `references/general-rules.md`, and the custodian's file. Work in the user's project folder. If the working directory is the plugin, ask where the project is.
+
+1. **Find the request.** Use the draft or the sent copy, the project's `prr-log.md`, and any saved replies. If there is no log, start one (section 1). Keep security keys out of it and out of chat.
+2. **Compute the dates** with `scripts/prr_after.py dates` (section 2). For a mailed letter, give both the mailing-date and receipt-date counts.
+3. **Read each new reply** against the table in section 3, and log it. Quote the statute only where the reply calls for it, and pull the current text as in Step 4.
+4. **Production:** run `scripts/prr_after.py index` on the download folder, OCR what needs it, read every file, and fill the item table (section 4). Never overwrite an index the user made.
+5. **Follow-up:** draft A (missing or unexplained records) or B (narrowing, scheduling, status) from section 5 as `prr-followup-<custodian>-<short-subject>-<YYYY-MM-DD>.md`, headed **DRAFT ONLY. NOT SENT.**, and run its checklist. New records need a new request through Steps 1 to 5.
+6. **Hand back:** what changed in the log, the next date to act, what is missing and why, and the draft path. If the user asks about suing, state section 6 and say a lawyer is needed. Draft no pleadings.
 
 $ARGUMENTS

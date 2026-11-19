@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Herald-Guide legal notices (St. Charles Parish official journal): fetch, OCR, grep.
+"""Herald Guide legal notices (St. Charles Parish official journal): fetch, OCR, grep.
 
 The weekly legals PDF is image-only (the text layer holds just the masthead), so every
 notice has to be OCRed. Issues come out on Thursdays.

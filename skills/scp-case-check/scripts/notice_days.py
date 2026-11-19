@@ -7,7 +7,7 @@ to count them has been checked, so a short count is a question for staff, not a 
 import argparse
 import datetime as dt
 
-THURSDAY = 3  # the Herald-Guide, the official journal, publishes on Thursdays
+THURSDAY = 3  # the Herald Guide, the official journal, publishes on Thursdays
 
 RULES = {
     "rezoning": {

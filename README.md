@@ -10,17 +10,20 @@ It records how parish processes work and where the records are, including what t
 
 | Skill | Use it for |
 |---|---|
-| `scp-civics:scp-land-use-process` | Rezonings, Future Land Use Map amendments, plats and waivers, variances, permit routes, notice rules, Herald-Guide legal notices, Legistar quirks, the Industrial Development Board, parish contacts |
+| `scp-civics:scp-government` | Start here. How parish government is organized and how to take part: who decides what under the Charter, which offices the Council doesn't control, how an ordinance passes, Council and board speaking rules, getting an item on an agenda, appointments and petitions. Which council, school board and legislative districts and polling place an address is in, and an Open Meetings Law timing check for one meeting. Routes other questions to the skill below that answers them |
+| `scp-civics:scp-land-use-process` | Rezonings, Future Land Use Map amendments, plats and waivers, variances, permit routes, notice rules, Herald Guide legal notices, Legistar quirks, the Industrial Development Board, parish contacts |
 | `scp-civics:scp-case-check` | Auditing one rezoning, plat or variance from its case number: its path, notice day counts, deadlines, Future Land Use Map resolution, plat against drainage study, waivers, and questions for staff |
-| `scp-civics:scp-watch` | A standing search for a project, applicant, place or topic across the Herald-Guide legal notices and Parish Council matters on Legistar, reporting only what is new since the last run. The watch lives in your project folder. |
+| `scp-civics:scp-watch` | A standing search for a project, applicant, place or topic across the Herald Guide legal notices, Parish Council matters on Legistar and the meeting calendar for every parish body, reporting only what is new since the last run: new meetings, cancellation notes, agendas posted and agenda lines that match. The watch lives in your project folder. |
+| `scp-civics:scp-decisions` | How the Council has actually decided: every rezoning since 1999 by district, place or period, with staff and Commission recommendations, the result read from the matter's history, and who voted no or was absent. Also topic searches, one member's record, one matter's full history, and the past rezonings closest to a pending one |
 | `scp-civics:scp-meeting-record` | What was said and voted at a parish meeting: finds the recording, makes a timestamped transcript (YouTube captions or local Whisper), checks it against the agenda, flags garbled names against a roster of officials and board members, and checks quotes and votes against Legistar |
 | `scp-civics:scp-incentives` | Tracing a project's PILOT lease, bonds and tax exemptions through the Industrial Development Board, Parish Council, State Bond Commission and ITEP: signed minutes, audits, Council consent, the resident-hiring policy, and the taxing bodies affected. |
+| `scp-civics:scp-economic-development` | What the parish pursues before a case exists: the Department of Economic Development and Tourism, the Economic Development Council's minutes, grant applications, state and company cooperative endeavor agreements, state capital outlay lines with line-item vetoes, federal grants and subawards, and economic development districts. For a site or project, what the parish applied for, received or promised, set in time beside what it said in public |
 | `scp-civics:scp-budget` | What the parish budgeted or spent on a project, fund or department: proposed and adopted budgets, amendments, capital projects reports and council districts, Council millages by tax year, sales tax, audits and how a budget gets adopted. Keeps requested, adopted, amended and spent amounts apart |
 | `scp-civics:scp-facilities` | Which industrial sites are registered at an address or near a point, with LDEQ AI and EPA IDs, and who to call about an odor, flare, spill or release at that hour. Drafts the report for you to make; it doesn't name a source from a smell |
 | `scp-civics:scp-ordinances` | Searching the parish code, Charter, zoning and subdivision appendices from a local copy, reading a section by number, and checking Legistar for later amendments |
 | `scp-civics:scp-master-drainage-plan` | Checking a proposed project against the parish Master Drainage Plan: which study covers the site, which planned improvements it touches, what they cost, and whether they have been funded or built |
 | `scp-civics:scp-comprehensive-plan` | What the 2030 Comprehensive Plan (2011) and its 2022 Update say about a place, parcel, Future Land Use category or topic, with document and page. Keeps the map designation apart from goals and recommendations, and says which map is current |
-| `scp-civics:scp-prr` | Getting records from a St. Charles Parish body: finds the custodian, asks what decides scope and speed, drafts the request, can fill the parish portal form up to Submit, and covers follow-up |
+| `scp-civics:scp-prr` | Getting records from a St. Charles Parish body: finds the custodian, asks what decides scope and speed, drafts the request, and can fill the parish portal form up to Submit. After sending (`--after`): request log, statutory dates, reading replies and denials against the statute, indexing a production against the request's items, follow-up drafts, the R.S. 44:35 route |
 
 The plugin drafts and researches. At your request it can fill the parish records form, but you review it and click Submit. It never sends a request, files a comment or buys a record.
 
@@ -31,7 +34,7 @@ The plugin drafts and researches. At your request it can fill the parish records
 /plugin install scp-civics@scp-civics
 ```
 
-Some scripts need Python 3. Herald-Guide OCR also needs `poppler` and `tesseract`. Code search, `scp-incentives` and `scp-budget` need `poppler`. Meeting transcripts need `yt-dlp` for YouTube captions, or `ffmpeg` and `uv` for local Whisper, whose model is a download of about 3 GB.
+Some scripts need Python 3. Herald Guide OCR also needs `poppler` and `tesseract`. Code search, `scp-incentives` and `scp-budget` need `poppler`. Meeting transcripts need `yt-dlp` for YouTube captions, or `ffmpeg` and `uv` for local Whisper, whose model is a download of about 3 GB.
 
 ## Using it with bayou
 

@@ -99,6 +99,8 @@ python3 "$MR" documents --event EVENT_ID --dir <project folder>/minutes
 
 An item can appear more than once, and an action with no vote row isn't a vote. A Legistar status is a label, so "Enacted" can sit on an item whose last action says otherwise. Check the history, the event item and the recording, and report any conflict.
 
+`votes` covers one meeting. For one matter across every meeting it came up at, or for votes across many meetings (a member's record, past rezonings), use `scp-civics:scp-decisions`.
+
 ## 6. Check each quote
 
 ```bash

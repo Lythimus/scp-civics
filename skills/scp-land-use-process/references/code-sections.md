@@ -12,7 +12,7 @@ To find or check code text, and for Municode node IDs, use `scp-civics:scp-ordin
 - **XV.B: notice of the Commission hearing.**
   - **Sign:** on the property and at the Planning & Zoning office at least 10 days ahead.
   - **Certified mail:** to **abutting** owners at least 10 days ahead.
-  - **Publication:** at least 3 times, on 3 separate weeks, in the official journal (the Herald-Guide), with at least **15 days** elapsed between the first publication and the hearing.
+  - **Publication:** at least 3 times, on 3 separate weeks, in the official journal (the Herald Guide), with at least **15 days** elapsed between the first publication and the hearing.
 - **XV.D: the standard.** The request must meet "two or more" of three guidelines; guideline one is consistency with the Future Land Use Map.
 - **XV.E: the Council's criteria.** Before the Council approves, there should be reasonable factual proof that the change complies with, or doesn't conflict with, the Comprehensive Plan and Future Land Use Map, and that it doesn't negatively affect health, safety and welfare.
 - **XV.F: withdrawal.** From the Commission: written notice by noon on the Wednesday before the meeting, then no readvertising for six months unless the Commission votes otherwise. From the Council: written request to the Council Secretary before noon on the Thursday before the hearing.

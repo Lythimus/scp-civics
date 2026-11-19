@@ -41,6 +41,20 @@ These are made up, to show the difference in scope.
 - If text messages or personal accounts matter, say so and cite R.S. 44:1(A)(2)(a) after checking the current text. Whether they are searched routinely is not established, so ask expressly.
 - Stay courteous and exact. Staff decide how hard to look.
 
+## Economic development records
+
+Most program applications have a Council resolution that names the program and project, which gives the request its titles. Some don't: no Council title named a FastSites award the department reported in 2026. Then learn the record names from the program's own rules and forms. `scp-civics:scp-economic-development` says what has been found posted. Record types worth naming, each for a named site, road or program and a date range:
+
+- The grant or program application as submitted, with its budget workbook, maps and attachments (for LED FastSites, the application and its budget form)
+- Letters of support signed by the President or Council members
+- The award letter, and the grant, loan or cooperative endeavor agreement with its exhibits and repayment schedule
+- Any model, analysis or projection a state agency sent the parish about the site
+- The parish's capital outlay request for a named project
+- For an economic development district: any economic development plan, intergovernmental agreement, and the registrar's certification of qualified electors, if one was obtained
+- The Economic Development Council's membership list, bylaws and appointment records
+
+LED is a separate custodian for its copies. R.S. 44:22 lets it hold an active negotiation's records for a limited time on stated conditions, so name the program and site rather than the company. Read the current text at legis.la.gov before citing it.
+
 ## Model text
 
 Fill the brackets and adapt it. Check the citations against the current statute first.

@@ -1,5 +1,6 @@
 # Private working notes for local sessions. Never published.
 .context/
+/ROADMAP.md
 CLAUDE.local.md
 .claude/settings.local.json
 

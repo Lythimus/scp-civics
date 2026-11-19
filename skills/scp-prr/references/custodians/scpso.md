@@ -31,7 +31,7 @@ The page accepts a written request that specifically identifies the records, by 
 
 - **Use certified mail with return receipt,** or hand-deliver and ask for a date-stamped copy. Mail adds transit time before the clock starts, so hand delivery is faster when a date matters.
 - **Email is a courtesy copy only.** It can go alongside the mailed letter, but do not count days from it. An older `recordsrequest@` address appears in a 2017 letter found online and is not on the current page, so do not rely on it.
-- **Count from receipt.** Day 1 is the first business day after the date on the return receipt or stamped copy. Exclude weekends and legal holidays (R.S. 1:55).
+- **Count from receipt.** Day 1 is the first business day after the date on the return receipt or stamped copy, which is the skill's counting convention, not a rule the Act states. Exclude weekends and legal holidays (R.S. 1:55). `prr_after.py dates --sent <mailing date> --received <receipt date>` shows the count from each date (`../after-sending.md` section 2).
 - **Who the custodian is.** R.S. 44:1(A)(3) defines the custodian as the head of the public body or a representative specifically authorized to respond. The Sheriff is Greg Champagne (office site; parish legal notices, June 2026). The page directs requests to Capt. Bostick, so address the letter there.
 
 ## Where to inspect records for free
@@ -122,5 +122,5 @@ Letters need a return address, since replies can come by mail. It does not have 
 
 - There are no portal emails. Replies come by mail or email, possibly from outside counsel, so watch both.
 - Give the send steps: sign, keep a copy, mail certified with return receipt, keep the receipt.
-- Calendar five business days from the return-receipt date, once it is known.
+- Calendar five business days from the return-receipt date, once it is known. When a reply or production comes, follow `../after-sending.md`.
 - Repeat the cost warning and the free inspection locations.

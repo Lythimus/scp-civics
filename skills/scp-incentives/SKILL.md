@@ -92,6 +92,7 @@ PILOT and ITEP can apply to different property of one company, so check for both
 - **Council:** `python3 "$IN" council --term "Industrial Tax Exemption"` shows the Council's ITEP resolutions and project IDs.
 - **Local ITEP Committee:** see its roster in the `scp-civics:scp-meeting-record` officials file. Its meetings and how to find its decisions weren't probed, so say what you looked at.
 - **Other agreements:** also search the company's name for cooperative endeavor or other direct agreements with taxing bodies, such as the foreign trade subzone agreement in Ord. 23-6-3, which lists the bodies that signed it.
+- **What the parish itself put in:** grants, state capital outlay, roads built toward the site and economic development districts are in `scp-civics:scp-economic-development`.
 
 ## 8. Name the taxing bodies
 

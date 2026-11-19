@@ -79,7 +79,7 @@ Search in this order. Each is a place where a plan project leaves a dated trace.
    journal and posted by the parish's purchasing office.
 5. **The parish's Master Drainage Plan and drainage pages** on stcharlesparish.gov, including any
    volumes or meeting decks newer than the corpus.
-6. **Parish news releases and the St. Charles Herald-Guide** for groundbreakings and completions.
+6. **Parish news releases and the St. Charles Herald Guide** for groundbreakings and completions.
 
 ## Step 4: funders
 
