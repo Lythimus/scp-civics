@@ -70,4 +70,10 @@ procedure is for engineering reports where tables and map exhibits must survive 
   printed numbers with their labels. Drop logos, north arrows, scale bars and cover art. Keep
   locator insets and near-duplicates. Flag cropped tables, rotated call-outs, unlabeled fills and
   legends with no key; do not guess their meaning.
+- **Which model describes maps.** If subagents describe the figures, use Sonnet or stronger for
+  maps, not Haiku. Haiku copies legend text and labels well, but it gets placement wrong: which
+  side of the river something is on, what borders what, which colour goes with which legend entry.
+  In the 2016 coastal program, Sonnet had to correct 43 of Haiku's 51 chapter 6 map descriptions.
+  A second model checking against the image catches most of these. Still look at a sample
+  yourself, and label every description with how it was checked.
 - **Provenance:** keep the snapshot link under every table.

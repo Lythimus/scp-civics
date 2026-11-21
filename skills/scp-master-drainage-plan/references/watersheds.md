@@ -77,5 +77,5 @@ the deck for status.
 
 ## Not part of the plan
 
-`St Charles Local Coastal Program.pdf`. The
+`St Charles Local Coastal Program.pdf`, which is converted in `scp-civics:scp-coastal-zone`. The
 duplicate `Bar None  Executive Summary (1).pdf` is byte-identical to the original and is skipped.

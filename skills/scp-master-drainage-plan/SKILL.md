@@ -165,7 +165,7 @@ Use other skills for what the plan does not hold. Do not restate their methods h
 |---|---|
 | Flood claims, policies and declarations near the site | `bayou:fema-flood` |
 | Levee, surge and land-loss context; coastal projects in the parish | `bayou:cpra-master-plan` |
-| Coastal use permit for the project or the plan improvement | `bayou:la-coastal-use-permits` |
+| Coastal use permit for the project or the plan improvement: the parish committee's list, local or state concern, the site's exemption screen, the comment and appeal clocks | `scp-civics:scp-coastal-zone`; the state record through `bayou:la-coastal-use-permits` |
 | Corps permit or Section 408 on a levee, canal or pump station | `bayou:usace-408-permits` |
 | Receiving water impairment where the basin discharges | `bayou:cwa-watershed-context` |
 | Historic drainage and land form | `bayou:usgs-historic-topo-lidar` |
@@ -173,8 +173,8 @@ Use other skills for what the plan does not hold. Do not restate their methods h
 | When the project's rezoning, servitude revocation or drainage contract comes before P&Z or the council, and the ordinance's history and hearing date (`agendas.py track st-charles "<applicant or case>"`) | `bayou:parish-council-agendas` |
 | The project's own drainage study or permit application | `bayou:document-ocr` then `bayou:permit-analysis` |
 
-`$SCP_CIVICS_DATA/St Charles Local Coastal Program.pdf`, if present, is
-not part of the plan. Cite it separately.
+The Local Coastal Program is not part of the drainage plan. Its converted text is in
+`scp-civics:scp-coastal-zone`; cite it from there.
 
 ### 6. Report
 

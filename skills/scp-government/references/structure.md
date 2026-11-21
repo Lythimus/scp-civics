@@ -80,7 +80,7 @@ Each holds its own meetings, listed on Legistar (`bodies`). Seats, terms and app
 | Planning & Zoning Commission | Charter III.C.4. It is the zoning commission. Members are appointed by the Council. A Council member, a School Board member and the President's designee sit ex officio without a vote | Parish custodian; `scp-civics:scp-land-use-process` |
 | Zoning Board of Adjustment | App. A Sec. XIII; R.S. 33:4727 | Parish custodian; results on its parish page |
 | Industrial Development Board | Its own corporation | **Its own custodian**: `scp-prr` `references/custodians/idb.md` |
-| Coastal Zone Advisory Committee | Ch. 26, Sec. 26-4 | Parish custodian |
+| Coastal Zone Advisory Committee | Ch. 26, Sec. 26-4. Seven members appointed by the Council, 4-year staggered terms (Ord. 25-8-7). Ord. 25-4-4 moved its functions to the Planning Commission for up to six months in 2025. Local permit appeals go to a three-member panel the Council appoints (Sec. 26-9). See `scp-civics:scp-coastal-zone` | Parish custodian (Coastal Zone Management) |
 | Civil Service Board | Charter III.C.5 | Parish custodian (Personnel) |
 | Communications District (911) | Sec. 2-8, under R.S. 33:9101. A separate political subdivision. Seven commissioners appointed by the Council, representing the Sheriff, fire service, EMS, the President and the Council | Its own custodian, not established. Meets at 222 Joe Louis Lane, Hahnville (Legistar) |
 | Hospital Service District No. 1 | It owns St. Charles Parish Hospital, which Ochsner manages (the hospital's announcements) | Its own custodian, not established |

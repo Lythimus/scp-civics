@@ -80,3 +80,7 @@ Quotes below were found in the PDF text layer (`pdftotext`) for Update pp43, 44,
 3. Obtain the digital Future Land Use layer from Planning & Zoning.
 4. Check Commission and Council agendas for any map amendment after the Update.
 5. Index the Pedestrian and Bicycle Master Plan if a case needs it.
+
+## Redaction
+
+Appendix A (Public Comments) prints residents' comments on the 2011 draft. Here the three commenters' names are replaced with "Commenter 1" to "Commenter 3". Their personal email addresses are replaced with "[email address removed]", and two residents copied on one email are shown as "[two private names removed]". Parish staff, consultants and officials named in the same emails are kept. Nothing else in the text was redacted (as of 2026-11-20).

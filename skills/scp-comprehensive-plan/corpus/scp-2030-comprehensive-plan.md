@@ -5864,7 +5864,7 @@ This page intentionally left blank
 
 ### APPENDIX A: PUBLIC COMMENTS
 
---------Internet submission 1 recorded on: 5/24/2011 6:05:50 AM-------- Name: Marcel Di Giovanni E-mail Address: marceldig@mindspring.com
+--------Internet submission 1 recorded on: 5/24/2011 6:05:50 AM-------- Name: Commenter 1 E-mail Address: [email address removed]
 
 #### Your Comments on the St. Charles 2030 Comprehensive Plan:
 
@@ -5872,7 +5872,7 @@ There is a block of land, made up of several tracts, west and adjacent to LA 50,
 
 I am also confused about the perceived need for high density residential housing when the people would like to preserve the rural feel of St. Charles Parish. Thanks.
 
---------Internet submission 2 recorded on: 6/1/2011 8:34:01 PM-------- Name: Jeffrey Roux E-mail Address: Jeff@roux.org
+--------Internet submission 2 recorded on: 6/1/2011 8:34:01 PM-------- Name: Commenter 2 E-mail Address: [email address removed]
 
 #### Your Comments on the St. Charles 2030 Comprehensive Plan:
 
@@ -5906,7 +5906,7 @@ There may be other issues presented by others as my basic familiarity is on the 
 
 Thank you for the opportunity to submit a comment in I feel a short period for public comment and with more time I would give page and paragraph comments.
 
---------Internet submission 3 recorded on: 6/2/2011 6:31:32 AM------- Name: Joan Robbins E-mail Address: joan\_robbins@att.net
+--------Internet submission 3 recorded on: 6/2/2011 6:31:32 AM------- Name: Commenter 3 E-mail Address: [email address removed]
 
 #### Your Comments on the St. Charles 2030 Comprehensive Plan:
 
@@ -5921,7 +5921,7 @@ As I see fuel prices increase at the fuel pumps and the blandness of fresh produ
 Don't just give lip service to farming.
 
 -Email Correspondence 1----------   
-From: Jara and Jeff Roux   
+From: Commenter 2   
 To: VJ St. Pierre   
 Marousek; Leon Vial; Manina Dubroca; Matt Scallan
 
@@ -5934,13 +5934,13 @@ This is only a short read into the doc.
 
 I was going to look at the 1 at the library in Paradis but they don’t have a copy. All the libraries should have multiple copies of these types of doc. For I 49 the Jeff library had multiple copies and I checked 1 out.
 
-From: VJ St. Pierre To: Jara and Jeff Roux
+From: VJ St. Pierre To: Commenter 2
 
 Sent: Tuesday, May 31, 2011 3:43 PM Subject: RE: land use plan
 
-Jeff, it is my understanding these areas to be commercial are only 200’ to 500’ of the HWY
+Commenter 2, it is my understanding these areas to be commercial are only 200’ to 500’ of the HWY
 
-From: Jara and Jeff Roux To: 'VJ St. Pierre'
+From: Commenter 2 To: 'VJ St. Pierre'
 
 Sent: Tuesday, May 31, 2011 4:02 PM Subject: RE: land use plan
 
@@ -5954,13 +5954,13 @@ The small land use study just completed for Ama did not cover I believe the land
 
 ## Page 211
 
-The study needs more time for review because it is embarrassing as presented. I’m happy to get with you but I have to read the entire doc in hard copy and other things have been in the way over the last week. Jeff
+The study needs more time for review because it is embarrassing as presented. I’m happy to get with you but I have to read the entire doc in hard copy and other things have been in the way over the last week. Commenter 2
 
-From: Jara and Jeff Roux Sent: Tuesday, May 31, 2011 4:11 PM To: Kimberly Marousek Cc: VJ St. Pierre
+From: Commenter 2 Sent: Tuesday, May 31, 2011 4:11 PM To: Kimberly Marousek Cc: VJ St. Pierre
 
 Subject: FW: land use plan
 
-Please include the [ABOVE] in the public record as well Jeff Roux
+Please include the [ABOVE] in the public record as well Commenter 2
 
 Manina Dubroca; Leon Vial
 
@@ -5968,11 +5968,11 @@ Subject: FW: land use plan
 
 Got a hard copy of plan this morning. Didn’t get far yet but on page vi 2<sup>nd</sup> para from bottom has P&Z commission responsible for coordinating implementation of the plan. Better check your budget for staffing this area and increasing the expertise of the members of the commission. Went to Parish website and function of P&Z commission is not that broad.
 
-Will get to more of my comments later. Jeff
+Will get to more of my comments later. Commenter 2
 
 #### ---------Email Correspondence 2----------
 
-From: Jara and Jeff Roux Sent: Friday, June 03, 2011 1:12 AM
+From: Commenter 2 Sent: Friday, June 03, 2011 1:12 AM
 
 To: Kimberly Marousek Cc: VJ St. Pierre; Manina Dubroca; Leon Vial;
 
@@ -5986,7 +5986,7 @@ I have a problem with the 3 items below as to who does what and if the proper pr
 
 #3 -----P&Z Department -after review by the P&Z Commission prepare and recommend P&Z Commission gives advice
 
-This is also confusing with the last statement made by Kim during the meeting on 2 June 2011 in response to a question from a commission member as to what happens next and in the future at the end of the discussion of this ordinance. Thanks Jeff
+This is also confusing with the last statement made by Kim during the meeting on 2 June 2011 in response to a question from a commission member as to what happens next and in the future at the end of the discussion of this ordinance. Thanks Commenter 2
 
 #### 1 45 PZO-2011-10
 
@@ -6056,11 +6056,11 @@ Willswood pond is in Jefferson Parish. Google "Willswood Pond" Llouisiana and th
 
 The area that is described was usually called "Louisa". Also the Jefferson Parish Line is labeled "Jefferson County"
 
-I'm going to check on some of the other figures that ref GIS in the Land Use Doc as I think some of the historic sites are close to where they actually are but off a little. Jeff Roux
+I'm going to check on some of the other figures that ref GIS in the Land Use Doc as I think some of the historic sites are close to where they actually are but off a little. Commenter 2
 
 From: Luis Martinez
 
-To: Jara and Jeff Roux
+To: Commenter 2
 
 Sent: Monday, June 06, 2011 7:19 PM
 
@@ -6068,9 +6068,9 @@ Cc: VJ St. Pierre; Kimberly Marousek
 
 Subject: RE: Willswood Pond
 
-Mr. Roux, I dont have the Land Use Plan in front of me but will take a look at the Willswood issue you mentioned. This is the first I ever hear of that but in all my GIS Data, Willswood is located outside the St.Charles Parish boundary. Please see the attached images from the parish Web GIS Map. As for the NCR-1 map, I did not make those maps but will certainly take a look at that figure as well as the others to make sure that error was not duplicated elsewhere. Thanks, Luis
+Commenter 2, I dont have the Land Use Plan in front of me but will take a look at the Willswood issue you mentioned. This is the first I ever hear of that but in all my GIS Data, Willswood is located outside the St.Charles Parish boundary. Please see the attached images from the parish Web GIS Map. As for the NCR-1 map, I did not make those maps but will certainly take a look at that figure as well as the others to make sure that error was not duplicated elsewhere. Thanks, Luis
 
-From: Jara and Jeff Roux
+From: Commenter 2
 
 To: Luis Martinez
 
@@ -6080,11 +6080,11 @@ Cc: VJ St. Pierre; Kimberly Marousek
 
 Subject: RE: Willswood Pond
 
-Luis Thanks for the quick response. The other doc was a presentation to the OP/Main/const Management Committee Mtg on Thurs March 24 2011. In the doc they label davis pond as willswood Pond and also refer to a pond on the batture near the diversion as willswood pond The brief was given by someone from Krebs LaSalle Environmental LLC. I mentioned it to them after the brief. The GIS does define the Parish Boundary as St Charles County in one presentation and Jefferson County as another. I don't understand how Parish is not there. Thanks again Jeff
+Luis Thanks for the quick response. The other doc was a presentation to the OP/Main/const Management Committee Mtg on Thurs March 24 2011. In the doc they label davis pond as willswood Pond and also refer to a pond on the batture near the diversion as willswood pond The brief was given by someone from Krebs LaSalle Environmental LLC. I mentioned it to them after the brief. The GIS does define the Parish Boundary as St Charles County in one presentation and Jefferson County as another. I don't understand how Parish is not there. Thanks again Commenter 2
 
 ---------Email Correspondence 4---------
 
-From: Jara and Jeff Roux
+From: Commenter 2
 
 To: Barbara Jacob-Tucker
 
@@ -6106,15 +6106,15 @@ I could find no explanation for this disparity in the document and the doc comme
 
 3. In the tables (Table IMP-1 Action Plan) starting on page 163 Planning and zoning dept has the lead on many items and the question is “What will be required to staff this dept in the future?”
 
-Please consider all these items before the 20 June 2011 meeting. Jeff Roux
+Please consider all these items before the 20 June 2011 meeting. Commenter 2
 
 #### ---------Email Correspondence 5---------
 
-From: Jara and Jeff Roux
+From: Commenter 2
 
 Sent: Thursday, June 09, 2011 7:42 AM
 
-To: Marny Stein Cc: MRichoux; Joan & Roland Becnel; VJ
+To: Marny Stein Cc: MRichoux; [two private names removed]; VJ
 
 St. Pierre; TAuthement; PHogan; CSchexnaydre; STastet; KMarousek
 
@@ -6146,11 +6146,11 @@ Conflicts with Fig ES-1 Future Land Use as to wetlands being used as possible co
 
 General Comment
 
-Rec Contractor discuss some of the historic issues with the authors of our Pictorial History Thank you Jeff Roux
+Rec Contractor discuss some of the historic issues with the authors of our Pictorial History Thank you Commenter 2
 
 ---------Email Correspondence 6---------
 
-From: Jara and Jeff Roux
+From: Commenter 2
 
 Sent: Saturday, June 11, 2011 7:19 AM
 
@@ -6164,9 +6164,9 @@ Subject: FW: Comments on Land use Plan
 
 Reviewed P&Z commission meeting on 2 June. Kim addressed my wife and my written comments. Note notification req in Herald Guide. 3 listings Plan put on website 5/16/2011
 
-Don’t get HG but will be lucky to have had it listed 5/19 5/26 6/2 (date of mtg) Any questions please ask. Jeff Roux
+Don’t get HG but will be lucky to have had it listed 5/19 5/26 6/2 (date of mtg) Any questions please ask. Commenter 2
 
-From: Jara and Jeff Roux Sent: Thursday, June 09, 2011 10:07 PM To: Kimberly Marousek Cc: VJ St. Pierre; Leon Vial; PHogan; TAuthement; CSchexnaydre; Manina Dubroca; MStein; Matt Scallan Subject: Comments on Land use Plan
+From: Commenter 2 Sent: Thursday, June 09, 2011 10:07 PM To: Kimberly Marousek Cc: VJ St. Pierre; Leon Vial; PHogan; TAuthement; CSchexnaydre; Manina Dubroca; MStein; Matt Scallan Subject: Comments on Land use Plan
 
 Below found in westlaw ref Louisiana. I would like to know if it is applicable to the procedure to the land use plan just followed. I know the procedure being followed is not in accordance to what is in the document reference the open- house format.
 
@@ -6192,7 +6192,7 @@ In other public comment periods for I 49/western Tie-In Levee written comments w
 
 I do not know if the planning commission received any written comments submitted prior to the meeting. I have not reviewed the CD of the meeting but will.
 
-I would also like to have the addresses (snail mail or email) of the members of the steering committee in order to forward my comments to them. If this is not poss because of some privacy rules I would like for your dept to forward the comments to them since there must have been calling notices issued for meetings. Thank you, Jeff Roux
+I would also like to have the addresses (snail mail or email) of the members of the steering committee in order to forward my comments to them. If this is not poss because of some privacy rules I would like for your dept to forward the comments to them since there must have been calling notices issued for meetings. Thank you, Commenter 2
 
 > **Text-layer supplement (text on this page that the layout parse did not capture; reading order approximate, taken from the PDF text layer):**
 >

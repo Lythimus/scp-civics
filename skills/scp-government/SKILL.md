@@ -30,6 +30,8 @@ Answer here only questions about structure and participation. Hand everything el
 | PILOTs, IDB leases, bonds, ITEP | `scp-civics:scp-incentives` |
 | What the parish applied for, received or promised for a site: grants, state capital outlay, federal awards, economic development districts, the Economic Development Council | `scp-civics:scp-economic-development` |
 | Plants at an address, reporting a release | `scp-civics:scp-facilities` |
+| Who lives in a community, how communities compare, who lives near industry, where industrial rezonings have landed | `scp-civics:scp-communities` |
+| Coastal use permits, the Coastal Zone Advisory Committee, the Local Coastal Program, exemptions and coastal appeal deadlines | `scp-civics:scp-coastal-zone` |
 | Drainage plan, Comprehensive Plan | `scp-civics:scp-master-drainage-plan`, `scp-civics:scp-comprehensive-plan` |
 | Documents from any parish body | `scp-civics:scp-prr` |
 | A custodian replied, produced records, denied, charged a fee or went silent | `scp-civics:scp-prr --after` |

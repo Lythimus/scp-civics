@@ -44,3 +44,4 @@ Examples to adapt:
 | Contract or purchase | Procurement; Finance; Contract Monitor |
 | Grant-funded project | Grants; Finance; the department running the project |
 | Utility service to a site | Wastewater; Waterworks; Planning & Zoning |
+| Coastal use permit file (parish program) | The form lists no Coastal Zone Management department. The Local Coastal Program's cover (2016) places the Coastal Zone Management Section in the Department of Planning & Zoning. Tick Planning & Zoning and Administration, add Public Works/Engineering for a parish project, and name the Coastal Zone Management office, the `SCP-yyyy-nn` number and the state P-number in the request text. The state's copy of the application is in SONRIS (`scp-civics:scp-coastal-zone` `permit`). |

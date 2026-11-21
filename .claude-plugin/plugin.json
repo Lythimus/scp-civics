@@ -1,10 +1,10 @@
 {
   "name": "scp-civics",
-  "description": "St. Charles Parish, Louisiana civic research: how parish government is organized and how residents take part, who represents an address, and Open Meetings Law checks; land-use procedure and case audits, watching legal notices, Council matters and the meeting calendar, past Council decisions and member voting records, meeting records and votes, the code of ordinances, Master Drainage and Comprehensive Plans, incentives, what the parish applies for and funds for economic development (grants, state capital outlay, federal awards, economic development districts), budgets and millages, industrial facilities and who to call about a release, and drafting public records requests and their follow-ups, with parish form filling up to Submit. Works alone; the bayou plugin adds the statewide research skills these point to.",
+  "description": "St. Charles Parish, Louisiana civic research: how parish government is organized and how residents take part, who represents an address, and Open Meetings Law checks; land-use procedure and case audits, watching legal notices, Council matters and the meeting calendar, past Council decisions and member voting records, meeting records and votes, the code of ordinances, Master Drainage and Comprehensive Plans, coastal use permits and the Local Coastal Program, incentives, what the parish applies for and funds for economic development (grants, state capital outlay, federal awards, economic development districts), budgets and millages, who lives in each community and near industry, where industrial rezonings have landed, industrial facilities and who to call about a release, and drafting public records requests and their follow-ups, with parish form filling up to Submit. Works alone; the bayou plugin adds the statewide research skills these point to.",
   "version": "0.1.0",
   "author": { "name": "Joseph Coco" },
   "homepage": "https://github.com/Lythimus/scp-civics",
   "repository": "https://github.com/Lythimus/scp-civics",
   "license": "Apache-2.0",
-  "keywords": ["st-charles-parish", "louisiana", "civics", "public-records", "land-use", "drainage", "budget", "incentives", "meetings", "government", "economic-development"]
+  "keywords": ["st-charles-parish", "louisiana", "civics", "public-records", "land-use", "drainage", "coastal", "budget", "incentives", "meetings", "government", "economic-development", "environmental-justice"]
 }
